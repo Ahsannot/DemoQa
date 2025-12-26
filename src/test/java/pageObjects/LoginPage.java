@@ -23,7 +23,6 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//button[@id='newUser']")
     WebElement linkNewUser;
 
-
     //   ************************ ACTION METHODS ************************
 
     public String getConfirmationMessage(){
