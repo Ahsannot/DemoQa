@@ -1,157 +1,17 @@
-2025-12-24 19:46:28.697 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
-2025-12-24 19:46:53.597 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
-2025-12-24 19:46:53.624 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
-2025-12-24 19:46:53.747 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
-2025-12-24 19:46:53.751 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
-2025-12-24 19:46:55.082 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.
-2025-12-24 19:48:04.886 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
-2025-12-24 19:48:15.509 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
-2025-12-24 19:48:15.533 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
-2025-12-24 19:48:15.641 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
-2025-12-24 19:48:15.643 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
-2025-12-24 19:48:16.959 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.
-2025-12-24 19:52:10.036 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
-2025-12-24 19:52:19.760 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
-2025-12-24 19:52:19.777 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
-2025-12-24 19:52:19.879 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
-2025-12-24 19:52:19.879 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
-2025-12-24 19:52:20.016 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Book Store Application
-2025-12-24 19:52:20.077 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store
-2025-12-24 19:52:20.077 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - BooksPage validation passed
-2025-12-24 19:52:21.503 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.
-2025-12-24 20:05:49.291 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
-2025-12-24 20:06:01.714 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
-2025-12-24 20:06:01.738 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
-2025-12-24 20:06:01.841 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
-2025-12-24 20:06:01.858 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
-2025-12-24 20:06:02.004 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Book Store Application
-2025-12-24 20:06:02.055 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store
-2025-12-24 20:06:02.055 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - BooksPage validation passed
-2025-12-24 20:06:02.129 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Login in Side-Bar
-2025-12-24 20:06:02.214 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Login in Book Store
-2025-12-24 20:06:02.214 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - LoginPage validation passed
-2025-12-24 20:06:02.347 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on New User button
-2025-12-24 20:06:02.408 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Register to Book Store
-2025-12-24 20:06:02.408 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - RegisterPage validation passed
-2025-12-24 20:06:02.408 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Adding New User Info
-2025-12-24 20:06:04.623 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.
-2025-12-24 20:39:54.805 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
-2025-12-24 20:40:09.413 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
-2025-12-24 20:40:09.455 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
-2025-12-24 20:40:09.713 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
-2025-12-24 20:40:09.720 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
-2025-12-24 20:40:09.981 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Book Store Application
-2025-12-24 20:40:10.097 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store
-2025-12-24 20:40:10.100 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - BooksPage validation passed
-2025-12-24 20:40:10.254 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Login in Side-Bar
-2025-12-24 20:40:10.444 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Login in Book Store
-2025-12-24 20:40:10.444 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - LoginPage validation passed
-2025-12-24 20:40:12.356 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.
-2025-12-24 20:41:01.098 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
-2025-12-24 20:41:16.490 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
-2025-12-24 20:41:16.523 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
-2025-12-24 20:41:16.771 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
-2025-12-24 20:41:16.781 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
-2025-12-24 20:41:17.044 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Book Store Application
-2025-12-24 20:41:17.160 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store
-2025-12-24 20:41:17.168 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - BooksPage validation passed
-2025-12-24 20:41:17.282 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Login in Side-Bar
-2025-12-24 20:41:17.415 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Login in Book Store
-2025-12-24 20:41:17.415 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - LoginPage validation passed
-2025-12-24 20:41:18.994 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.
-2025-12-24 20:45:20.533 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
-2025-12-24 20:45:46.436 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
-2025-12-24 20:45:46.475 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
-2025-12-24 20:45:46.693 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
-2025-12-24 20:45:46.704 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
-2025-12-24 20:45:46.998 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Book Store Application
-2025-12-24 20:45:47.152 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store
-2025-12-24 20:45:47.152 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - BooksPage validation passed
-2025-12-24 20:45:47.294 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Login in Side-Bar
-2025-12-24 20:45:47.485 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Login in Book Store
-2025-12-24 20:45:47.485 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - LoginPage validation passed
-2025-12-24 20:45:47.732 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on New User button
-2025-12-24 20:45:47.855 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Register to Book Store
-2025-12-24 20:45:47.855 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - RegisterPage validation passed
-2025-12-24 20:45:47.855 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Adding New User Info
-2025-12-24 20:46:49.934 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
-2025-12-24 20:47:24.281 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
-2025-12-24 20:47:24.330 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
-2025-12-24 20:47:24.595 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
-2025-12-24 20:47:24.600 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
-2025-12-24 20:47:24.899 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Book Store Application
-2025-12-24 20:47:25.044 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store
-2025-12-24 20:47:25.044 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - BooksPage validation passed
-2025-12-24 20:47:25.178 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Login in Side-Bar
-2025-12-24 20:47:25.311 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Login in Book Store
-2025-12-24 20:47:25.311 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - LoginPage validation passed
-2025-12-24 20:47:25.671 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on New User button
-2025-12-24 20:47:25.871 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Register to Book Store
-2025-12-24 20:47:25.871 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - RegisterPage validation passed
-2025-12-24 20:47:25.871 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Adding New User Info
-2025-12-24 20:47:32.178 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Filled registration form and clicked Register button
-2025-12-24 20:47:39.548 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.
-2025-12-24 20:47:49.003 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
-2025-12-24 20:47:59.223 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
-2025-12-24 20:47:59.263 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
-2025-12-24 20:47:59.539 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
-2025-12-24 20:47:59.547 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
-2025-12-24 20:47:59.816 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Book Store Application
-2025-12-24 20:47:59.921 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store
-2025-12-24 20:47:59.921 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - BooksPage validation passed
-2025-12-24 20:48:00.118 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Login in Side-Bar
-2025-12-24 20:48:00.293 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Login in Book Store
-2025-12-24 20:48:00.294 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - LoginPage validation passed
-2025-12-24 20:48:02.058 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.
-2025-12-24 20:48:13.376 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
-2025-12-24 20:50:01.583 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
-2025-12-24 20:50:14.392 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
-2025-12-24 20:50:14.430 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
-2025-12-24 20:50:14.691 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
-2025-12-24 20:50:14.695 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
-2025-12-24 20:50:14.963 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Book Store Application
-2025-12-24 20:50:15.119 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store
-2025-12-24 20:50:15.119 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - BooksPage validation passed
-2025-12-24 20:50:15.269 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Login in Side-Bar
-2025-12-24 20:50:15.477 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Login in Book Store
-2025-12-24 20:50:15.478 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - LoginPage validation passed
-2025-12-24 20:50:15.623 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on New User button
-2025-12-24 20:50:15.770 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Register to Book Store
-2025-12-24 20:50:15.774 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - RegisterPage validation passed
-2025-12-24 20:50:15.774 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Adding New User Info
-2025-12-24 20:50:21.836 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Filled registration form and clicked Register button
-2025-12-24 20:50:27.511 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.
-2025-12-24 20:52:39.554 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
-2025-12-24 20:52:50.343 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
-2025-12-24 20:52:50.393 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
-2025-12-24 20:52:50.659 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
-2025-12-24 20:52:50.675 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
-2025-12-24 20:52:50.923 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Book Store Application
-2025-12-24 20:52:51.041 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store
-2025-12-24 20:52:51.041 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - BooksPage validation passed
-2025-12-24 20:52:51.222 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Login in Side-Bar
-2025-12-24 20:52:51.361 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Login in Book Store
-2025-12-24 20:52:51.363 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - LoginPage validation passed
-2025-12-24 20:52:51.547 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on New User button
-2025-12-24 20:52:51.719 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Register to Book Store
-2025-12-24 20:52:51.719 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - RegisterPage validation passed
-2025-12-24 20:52:51.719 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Adding New User Info
-2025-12-24 20:52:58.408 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Filled registration form and clicked Register button
-2025-12-24 20:52:59.883 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.
-2025-12-24 20:54:22.491 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
-2025-12-24 20:54:34.654 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
-2025-12-24 20:54:34.700 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
-2025-12-24 20:54:34.959 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
-2025-12-24 20:54:34.965 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
-2025-12-24 20:54:35.232 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Book Store Application
-2025-12-24 20:54:35.340 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store
-2025-12-24 20:54:35.348 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - BooksPage validation passed
-2025-12-24 20:54:35.486 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Login in Side-Bar
-2025-12-24 20:54:35.602 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Login in Book Store
-2025-12-24 20:54:35.602 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - LoginPage validation passed
-2025-12-24 20:54:35.782 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on New User button
-2025-12-24 20:54:35.942 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Register to Book Store
-2025-12-24 20:54:35.942 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - RegisterPage validation passed
-2025-12-24 20:54:35.942 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Adding New User Info
-2025-12-24 20:54:42.470 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Filled registration form and clicked Register button
-2025-12-24 20:54:48.046 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.
+2025-12-26 12:05:12.796 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
+2025-12-26 12:05:39.016 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
+2025-12-26 12:05:39.082 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
+2025-12-26 12:05:39.223 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
+2025-12-26 12:05:39.231 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
+2025-12-26 12:05:39.376 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Book Store Application
+2025-12-26 12:05:39.427 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store
+2025-12-26 12:05:39.427 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - BooksPage validation passed
+2025-12-26 12:05:39.514 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Login in Side-Bar
+2025-12-26 12:05:39.588 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Login in Book Store
+2025-12-26 12:05:39.588 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - LoginPage validation passed
+2025-12-26 12:05:39.704 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on New User button
+2025-12-26 12:05:39.768 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Register to Book Store
+2025-12-26 12:05:39.768 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - RegisterPage validation passed
+2025-12-26 12:05:39.768 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Adding New User Info
+2025-12-26 12:05:52.080 [TestNG-tests-1] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/accountRegistration_20251226120552.png
+2025-12-26 12:05:52.352 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.

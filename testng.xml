@@ -2,7 +2,9 @@
 
 <!--<suite name="BookStore Automation Suite" parallel="tests" thread-count="2">-->
 <suite name="BookStore Automation Suite" parallel="tests" thread-count="2">
-
+    <listeners>
+        <listener class-name="utilities.ExtentReportListener" />
+    </listeners>
     <test name="Account Registration Tests">
         <classes>
             <class name="testCases.TC_001AccountRegistrationTest"/>
