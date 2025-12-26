@@ -15,3 +15,24 @@
 2025-12-26 12:05:39.768 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Adding New User Info
 2025-12-26 12:05:52.080 [TestNG-tests-1] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/accountRegistration_20251226120552.png
 2025-12-26 12:05:52.352 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.
+2025-12-26 15:36:08.036 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Starting test...
+2025-12-26 15:37:06.442 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Navigated to: https://demoqa.com/
+2025-12-26 15:37:06.483 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - ===== Starting Account Registration Test =====
+2025-12-26 15:37:06.607 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store Application
+2025-12-26 15:37:06.624 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - HomePage validation passed
+2025-12-26 15:37:06.798 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Book Store Application
+2025-12-26 15:37:06.853 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Book Store
+2025-12-26 15:37:06.853 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - BooksPage validation passed
+2025-12-26 15:37:06.928 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on Login in Side-Bar
+2025-12-26 15:37:06.994 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Login in Book Store
+2025-12-26 15:37:06.994 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - LoginPage validation passed
+2025-12-26 15:37:07.081 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Clicked on New User button
+2025-12-26 15:37:07.176 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Confirmation message received: Register to Book Store
+2025-12-26 15:37:07.176 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - RegisterPage validation passed
+2025-12-26 15:37:07.176 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Adding New User Info
+2025-12-26 15:37:19.012 [TestNG-tests-1] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/accountRegistration_20251226153718.png
+2025-12-26 15:37:19.339 [TestNG-tests-1] INFO  testCases.TC_001AccountRegistrationTest - Browser closed successfully.
+2025-12-26 15:37:20.041 [TestNG-tests-1] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2025-12-26 15:37:20.057 [TestNG-tests-1] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2025-12-26 15:37:20.057 [TestNG-tests-1] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2025-12-26 15:37:26.590 [TestNG-tests-1] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com

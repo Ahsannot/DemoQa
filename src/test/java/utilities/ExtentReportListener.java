@@ -128,7 +128,24 @@ public class ExtentReportListener implements ITestListener {
     public void onFinish(ITestContext context){
 
         System.out.println("onFinish - Test Suite finished: " + context.getName());
+        // Write everything to HTML file
         extentReports.flush();
+
+        // Get final report file path
+        String reportPath = sparkReporter.getFile().getAbsolutePath();
+
+        if (new File(reportPath).exists()) {
+
+            System.out.println("Report exists at: " + reportPath);
+
+            // Send report via email
+            EmailReportSender.sendReport("hafizgee07@gmail.com", reportPath);
+
+            System.out.println("Report Sent to hafizgee07@gmail.com");
+        } else {
+
+            System.out.println("Report file does not exist at path: " + reportPath);
+        }
     }
 
    /*
