@@ -103,7 +103,6 @@ public class ExcelUtils {
                     return "";
             }
         } catch (Exception e) {
-            System.out.println("Error reading cell at row " + rowNum + ", column " + colNum);
             logger.error("Error reading cell [{}][{}]", rowNum, colNum, e);
             return "";
         }
@@ -133,12 +132,10 @@ public class ExcelUtils {
 
             fileOutputStream.close();
 
-            System.out.println("Written data to cell [" + rowNum + "][" + colNum + "]: " + value);
             logger.info("Written data to Excel [{}][{}]: {}", rowNum, colNum, value);
 
         } catch (Exception e) {
-            System.out.println("Failed to write data to Excel file.");
-            logger.error("Failed to write data to Excel file", e);
+            logger.error("Failed to write data to Excel file: {}", filePath, e);
             throw e;
         }
     }
@@ -152,7 +149,6 @@ public class ExcelUtils {
     public void closeWorkbook() throws IOException {
         if (workbook != null) {
             workbook.close();
-            System.out.println("Workbook closed.");
             logger.info("Workbook closed.");
         }
     }
