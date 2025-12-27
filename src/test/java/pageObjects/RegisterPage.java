@@ -66,12 +66,8 @@ public class RegisterPage extends BasePage{
     }
 
     public void clickRegisterButton() throws InterruptedException {
-
         Thread.sleep(10000);
-        // To handle Captcha we will wait for 10 sec and manually click on it and then click on send button
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.elementToBeClickable(btnRegister));
-        btnRegister.click();
+        jsClick(btnRegister);
     }
 }
 

@@ -11,73 +11,72 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.asserts.SoftAssert;
+import utilities.ConfigReader;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.time.Duration;
-import java.util.Properties;
-
 
 public class BaseClass {
 
-    public WebDriver driver;
-    public ChromeOptions chromeOptions;
-    public Logger logger;
-    public Properties prop;
+    protected WebDriver driver;
+    protected ChromeOptions chromeOptions;
+    protected Logger logger;
 
     @BeforeClass
     public void setup() throws IOException {
         logger = LogManager.getLogger(this.getClass());
         logger.info("Starting test...");
 
-        try (FileInputStream file = new FileInputStream("src/test/resources/config.properties")) {
-            prop = new Properties();
-            prop.load(file);
-        }
-
         chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--incognito");
-        driver = new ChromeDriver(chromeOptions);
 
+        driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
-        driver.get(prop.getProperty("baseURL"));
 
-        logger.info("Navigated to: " + prop.getProperty("baseURL"));
+        driver.get(ConfigReader.getProperty("baseURL"));
+        logger.info("Navigated to: " + ConfigReader.getProperty("baseURL"));
     }
 
-    // ================= HELPER / UTILITY METHOD FOR PAGE OPENNING VALIDATION =================
-
-    public void validatePageMessage(String actual, String expected, String pageName) {
+    // ================= HARD ASSERT (USE ONLY IN TC_001) =================
+    public void validatePageMessageHard(String actual, String expected, String pageName) {
         Assert.assertEquals(actual, expected, pageName + " validation failed");
         logger.info(pageName + " validation passed");
     }
 
+    // ================= SOFT / DDT-SAFE VALIDATION (USE IN TC_002) =================
+    public boolean validatePageMessageSoft(String actual, String expected, String pageName, SoftAssert softAssert) {
+        if (actual.equals(expected)) {
+            logger.info(pageName + " validation passed");
+            return true;
+        } else {
+            logger.warn(pageName + " validation failed | Expected: "
+                    + expected + " | Actual: " + actual);
+            if (softAssert != null) {
+                softAssert.assertEquals(actual, expected, pageName + " validation failed");
+            }
+            return false;
+        }
+    }
 
-    // ========== RANDOM DATA HELPERS ==========
+    // ================= RANDOM DATA HELPERS =================
     public String randomString() {
-        return RandomStringUtils.randomAlphabetic(5); // e.g., "Abcde"
+        return RandomStringUtils.randomAlphabetic(5);
     }
 
     public String randomNumber() {
-        return RandomStringUtils.randomNumeric(10); // e.g., "1234567890"
+        return RandomStringUtils.randomNumeric(10);
     }
 
     public String randomAlphaNumeric() {
-        return RandomStringUtils.randomAlphanumeric(8); // e.g., "A1B2C3D4"
+        return RandomStringUtils.randomAlphanumeric(8);
     }
 
-
-    // Attach driver to test result attributes before each test method for reporting
-    // It runs even if the test belongs to a skipped group
+    // Attach driver for reporting
     @BeforeMethod(alwaysRun = true)
-    // Method method (Represents the test method about to run)  ITestResult result (Test status, Attributes, Exceptions)
     public void attachDriverToTestResult(Method method, ITestResult result) {
-        // Attaches the WebDriver instance to the current test result
-        //Stored as a key–value pair:
-        //Key: "driver"
-        //Value: driver
         result.setAttribute("driver", driver);
     }
 
