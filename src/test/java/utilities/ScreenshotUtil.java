@@ -44,7 +44,6 @@ public class ScreenshotUtil {
 
             // Log and print confirmation
             logger.info("Screenshot saved to: {}", path);
-            System.out.println("Screenshot saved to: " + path);
 
             return path;
 

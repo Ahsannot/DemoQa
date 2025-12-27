@@ -40,8 +40,8 @@ public class ExcelUtils {
         this.sheetName = sheetName;
 
         try {
-            System.out.println("Opening Excel file: " + filePath);
             logger.info("Opening Excel file: {}", filePath);
+
 
             fileInputStream = new FileInputStream(filePath);
             workbook = new XSSFWorkbook(fileInputStream);
@@ -71,7 +71,6 @@ public class ExcelUtils {
      */
     public int getRowCount() {
         int count = sheet.getPhysicalNumberOfRows();
-        System.out.println("Row count: " + count);
         logger.info("Row count retrieved: {}", count);
         return count;
     }
