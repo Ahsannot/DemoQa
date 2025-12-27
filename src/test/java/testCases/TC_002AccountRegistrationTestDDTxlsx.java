@@ -32,6 +32,7 @@ public class TC_002AccountRegistrationTestDDTxlsx extends BaseClass {
         logger.info("===== Starting Registration DDT Test for: " + uname + " =====");
 
         ExcelUtils excel = new ExcelUtils(excelPath, sheetName);
+        // Defaulting to "Fail" ensures that if something goes wrong before setting actualResult, it will be treated as a failure.
         String actualResult = "Fail";
 
         // Create SoftAssert object
@@ -90,6 +91,7 @@ public class TC_002AccountRegistrationTestDDTxlsx extends BaseClass {
 
 
             // Soft assert for expected vs actual result
+            // Row 3 - User: john_doe - Expected vs Actual mismatch
             softAssert.assertEquals(actualResult, expectedResult,
                     "Row " + (rowIndex + 1) + " - User: " + uname + " - Expected vs Actual mismatch");
 
