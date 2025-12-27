@@ -1809,3 +1809,332 @@ Session ID: bab1acbfcad32fd1187824f8f80294d2
 2025-12-27 16:29:42.193 [TestNG-tests-1] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
 2025-12-27 16:29:42.193 [TestNG-tests-1] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
 2025-12-27 16:29:47.233 [TestNG-tests-1] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2025-12-27 22:01:34.706 [TestNG-tests-1] INFO  testCases.TC_002AccountRegistrationTestDDTxlsx - Starting test...
+2025-12-27 22:02:08.521 [TestNG-tests-1] INFO  testCases.TC_002AccountRegistrationTestDDTxlsx - Navigated to: https://demoqa.com/
+2025-12-27 22:02:08.540 [TestNG-tests-1] INFO  utilities.RegisterDataProvider - Reading Register data from Excel: testData/register_user.xlsx, Sheet: Sheet1
+2025-12-27 22:02:08.540 [TestNG-tests-1] INFO  utilities.ExcelUtils - Opening Excel file: testData/register_user.xlsx
+2025-12-27 22:02:09.868 [TestNG-tests-1] INFO  utilities.ExcelUtils - Loaded sheet: Sheet1
+2025-12-27 22:02:09.868 [TestNG-tests-1] INFO  utilities.ExcelUtils - Row count retrieved: 7
+2025-12-27 22:02:09.881 [TestNG-tests-1] INFO  utilities.RegisterDataProvider - Loaded Row 1 -> UserName: hafiz_ahsan1, ExpectedResult: Fail
+2025-12-27 22:02:09.881 [TestNG-tests-1] INFO  utilities.RegisterDataProvider - Loaded Row 2 -> UserName: hafiz_ahsan2, ExpectedResult: Fail
+2025-12-27 22:02:09.881 [TestNG-tests-1] INFO  utilities.RegisterDataProvider - Loaded Row 3 -> UserName: hafiz_ahsan3, ExpectedResult: Fail
+2025-12-27 22:02:09.881 [TestNG-tests-1] INFO  utilities.RegisterDataProvider - Loaded Row 4 -> UserName: hafiz_ahsan4, ExpectedResult: Fail
+2025-12-27 22:02:09.881 [TestNG-tests-1] INFO  utilities.RegisterDataProvider - Loaded Row 5 -> UserName: hafiz_ahsan, ExpectedResult: Fail
+2025-12-27 22:02:09.881 [TestNG-tests-1] INFO  utilities.RegisterDataProvider - Loaded Row 6 -> UserName: hafiz@gmail.com, ExpectedResult: Pass
+2025-12-27 22:02:09.881 [TestNG-tests-1] INFO  utilities.ExcelUtils - Workbook closed.
+2025-12-27 22:02:09.888 [TestNG-tests-1] INFO  utilities.RegisterDataProvider - Excel workbook closed.
+2025-12-27 22:02:09.929 [TestNG-tests-1] INFO  testCases.TC_002AccountRegistrationTestDDTxlsx - ===== Starting Registration DDT Test for: hafiz_ahsan1 =====
+2025-12-27 22:02:09.929 [TestNG-tests-1] INFO  utilities.ExcelUtils - Opening Excel file: testData/register_user.xlsx
+2025-12-27 22:02:10.028 [TestNG-tests-1] INFO  utilities.ExcelUtils - Loaded sheet: Sheet1
+2025-12-27 22:02:10.373 [TestNG-tests-1] INFO  testCases.TC_002AccountRegistrationTestDDTxlsx - HomePage validation passed
+2025-12-27 22:02:10.611 [TestNG-tests-1] INFO  testCases.TC_002AccountRegistrationTestDDTxlsx - BooksPage validation passed
+2025-12-27 22:02:10.743 [TestNG-tests-1] INFO  testCases.TC_002AccountRegistrationTestDDTxlsx - LoginPage validation passed
+2025-12-27 22:02:21.614 [TestNG-tests-1] ERROR testCases.TC_002AccountRegistrationTestDDTxlsx - Exception for user: hafiz_ahsan1 | invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=143.0.7499.111)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [50626286c0135f9bf962bc4098e4828d, findElement {using=xpath, value=//button[@id='register']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.111, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HAFIZM~2\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62002}, goog:processID: 25816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62002/devtoo..., se:cdpVersion: 143.0.7499.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50626286c0135f9bf962bc4098e4828d
+2025-12-27 22:02:21.740 [TestNG-tests-1] INFO  utilities.ExcelUtils - Written data to Excel [1][5]: Fail
+2025-12-27 22:02:21.756 [TestNG-tests-1] INFO  utilities.ExcelUtils - Written data to Excel [1][6]: Test Failed
+2025-12-27 22:02:21.757 [TestNG-tests-1] INFO  utilities.ExcelUtils - Workbook closed.
+2025-12-27 22:02:21.772 [TestNG-tests-1] ERROR utilities.ScreenshotUtil - Failed to capture screenshot
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [50626286c0135f9bf962bc4098e4828d, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.111, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HAFIZM~2\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62002}, goog:processID: 25816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62002/devtoo..., se:cdpVersion: 143.0.7499.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50626286c0135f9bf962bc4098e4828d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:346)
+	at utilities.ScreenshotUtil.captureScreenshot(ScreenshotUtil.java:33)
+	at utilities.ExtentReportListener.onTestFailure(ExtentReportListener.java:97)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:115)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:777)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-12-27 22:02:21.772 [TestNG-tests-1] INFO  testCases.TC_002AccountRegistrationTestDDTxlsx - ===== Starting Registration DDT Test for: hafiz_ahsan2 =====
+2025-12-27 22:02:21.772 [TestNG-tests-1] INFO  utilities.ExcelUtils - Opening Excel file: testData/register_user.xlsx
+2025-12-27 22:02:21.805 [TestNG-tests-1] INFO  utilities.ExcelUtils - Loaded sheet: Sheet1
+2025-12-27 22:02:21.805 [TestNG-tests-1] ERROR testCases.TC_002AccountRegistrationTestDDTxlsx - Exception for user: hafiz_ahsan2 | Cannot invoke "String.equals(Object)" because "actual" is null
+2025-12-27 22:02:21.819 [TestNG-tests-1] INFO  utilities.ExcelUtils - Written data to Excel [2][5]: Fail
+2025-12-27 22:02:21.850 [TestNG-tests-1] INFO  utilities.ExcelUtils - Written data to Excel [2][6]: Test Failed
+2025-12-27 22:02:21.850 [TestNG-tests-1] INFO  utilities.ExcelUtils - Workbook closed.
+2025-12-27 22:02:21.869 [TestNG-tests-1] ERROR utilities.ScreenshotUtil - Failed to capture screenshot
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [50626286c0135f9bf962bc4098e4828d, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.111, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HAFIZM~2\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62002}, goog:processID: 25816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62002/devtoo..., se:cdpVersion: 143.0.7499.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50626286c0135f9bf962bc4098e4828d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:346)
+	at utilities.ScreenshotUtil.captureScreenshot(ScreenshotUtil.java:33)
+	at utilities.ExtentReportListener.onTestFailure(ExtentReportListener.java:97)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:115)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:777)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-12-27 22:02:21.869 [TestNG-tests-1] INFO  testCases.TC_002AccountRegistrationTestDDTxlsx - ===== Starting Registration DDT Test for: hafiz_ahsan3 =====
+2025-12-27 22:02:21.869 [TestNG-tests-1] INFO  utilities.ExcelUtils - Opening Excel file: testData/register_user.xlsx
+2025-12-27 22:02:21.901 [TestNG-tests-1] INFO  utilities.ExcelUtils - Loaded sheet: Sheet1
+2025-12-27 22:02:21.901 [TestNG-tests-1] ERROR testCases.TC_002AccountRegistrationTestDDTxlsx - Exception for user: hafiz_ahsan3 | Cannot invoke "String.equals(Object)" because "actual" is null
+2025-12-27 22:02:21.913 [TestNG-tests-1] INFO  utilities.ExcelUtils - Written data to Excel [3][5]: Fail
+2025-12-27 22:02:21.928 [TestNG-tests-1] INFO  utilities.ExcelUtils - Written data to Excel [3][6]: Test Failed
+2025-12-27 22:02:21.928 [TestNG-tests-1] INFO  utilities.ExcelUtils - Workbook closed.
+2025-12-27 22:02:21.950 [TestNG-tests-1] ERROR utilities.ScreenshotUtil - Failed to capture screenshot
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [50626286c0135f9bf962bc4098e4828d, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.111, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HAFIZM~2\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62002}, goog:processID: 25816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62002/devtoo..., se:cdpVersion: 143.0.7499.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50626286c0135f9bf962bc4098e4828d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:346)
+	at utilities.ScreenshotUtil.captureScreenshot(ScreenshotUtil.java:33)
+	at utilities.ExtentReportListener.onTestFailure(ExtentReportListener.java:97)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:115)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:777)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-12-27 22:02:21.957 [TestNG-tests-1] INFO  testCases.TC_002AccountRegistrationTestDDTxlsx - ===== Starting Registration DDT Test for: hafiz_ahsan4 =====
+2025-12-27 22:02:21.958 [TestNG-tests-1] INFO  utilities.ExcelUtils - Opening Excel file: testData/register_user.xlsx
+2025-12-27 22:02:21.983 [TestNG-tests-1] INFO  utilities.ExcelUtils - Loaded sheet: Sheet1
+2025-12-27 22:02:21.983 [TestNG-tests-1] ERROR testCases.TC_002AccountRegistrationTestDDTxlsx - Exception for user: hafiz_ahsan4 | Cannot invoke "String.equals(Object)" because "actual" is null
+2025-12-27 22:02:21.999 [TestNG-tests-1] INFO  utilities.ExcelUtils - Written data to Excel [4][5]: Fail
+2025-12-27 22:02:22.012 [TestNG-tests-1] INFO  utilities.ExcelUtils - Written data to Excel [4][6]: Test Failed
+2025-12-27 22:02:22.012 [TestNG-tests-1] INFO  utilities.ExcelUtils - Workbook closed.
+2025-12-27 22:02:22.033 [TestNG-tests-1] ERROR utilities.ScreenshotUtil - Failed to capture screenshot
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [50626286c0135f9bf962bc4098e4828d, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.111, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HAFIZM~2\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62002}, goog:processID: 25816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62002/devtoo..., se:cdpVersion: 143.0.7499.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50626286c0135f9bf962bc4098e4828d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:346)
+	at utilities.ScreenshotUtil.captureScreenshot(ScreenshotUtil.java:33)
+	at utilities.ExtentReportListener.onTestFailure(ExtentReportListener.java:97)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:115)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:777)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-12-27 22:02:22.046 [TestNG-tests-1] INFO  testCases.TC_002AccountRegistrationTestDDTxlsx - ===== Starting Registration DDT Test for: hafiz_ahsan =====
+2025-12-27 22:02:22.048 [TestNG-tests-1] INFO  utilities.ExcelUtils - Opening Excel file: testData/register_user.xlsx
+2025-12-27 22:02:22.065 [TestNG-tests-1] INFO  utilities.ExcelUtils - Loaded sheet: Sheet1
+2025-12-27 22:02:22.065 [TestNG-tests-1] ERROR testCases.TC_002AccountRegistrationTestDDTxlsx - Exception for user: hafiz_ahsan | Cannot invoke "String.equals(Object)" because "actual" is null
+2025-12-27 22:02:22.081 [TestNG-tests-1] INFO  utilities.ExcelUtils - Written data to Excel [5][5]: Fail
+2025-12-27 22:02:22.102 [TestNG-tests-1] INFO  utilities.ExcelUtils - Written data to Excel [5][6]: Test Failed
+2025-12-27 22:02:22.102 [TestNG-tests-1] INFO  utilities.ExcelUtils - Workbook closed.
+2025-12-27 22:02:22.114 [TestNG-tests-1] ERROR utilities.ScreenshotUtil - Failed to capture screenshot
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [50626286c0135f9bf962bc4098e4828d, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.111, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HAFIZM~2\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62002}, goog:processID: 25816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62002/devtoo..., se:cdpVersion: 143.0.7499.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50626286c0135f9bf962bc4098e4828d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:346)
+	at utilities.ScreenshotUtil.captureScreenshot(ScreenshotUtil.java:33)
+	at utilities.ExtentReportListener.onTestFailure(ExtentReportListener.java:97)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:115)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:777)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-12-27 22:02:22.121 [TestNG-tests-1] INFO  testCases.TC_002AccountRegistrationTestDDTxlsx - ===== Starting Registration DDT Test for: hafiz@gmail.com =====
+2025-12-27 22:02:22.121 [TestNG-tests-1] INFO  utilities.ExcelUtils - Opening Excel file: testData/register_user.xlsx
+2025-12-27 22:02:22.143 [TestNG-tests-1] INFO  utilities.ExcelUtils - Loaded sheet: Sheet1
+2025-12-27 22:02:22.143 [TestNG-tests-1] ERROR testCases.TC_002AccountRegistrationTestDDTxlsx - Exception for user: hafiz@gmail.com | Cannot invoke "String.equals(Object)" because "actual" is null
+2025-12-27 22:02:22.164 [TestNG-tests-1] INFO  utilities.ExcelUtils - Written data to Excel [6][5]: Fail
+2025-12-27 22:02:22.176 [TestNG-tests-1] INFO  utilities.ExcelUtils - Written data to Excel [6][6]: Test Failed
+2025-12-27 22:02:22.176 [TestNG-tests-1] INFO  utilities.ExcelUtils - Workbook closed.
+2025-12-27 22:02:22.176 [TestNG-tests-1] ERROR utilities.ScreenshotUtil - Failed to capture screenshot
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [50626286c0135f9bf962bc4098e4828d, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.111, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HAFIZM~2\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62002}, goog:processID: 25816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62002/devtoo..., se:cdpVersion: 143.0.7499.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 50626286c0135f9bf962bc4098e4828d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:346)
+	at utilities.ScreenshotUtil.captureScreenshot(ScreenshotUtil.java:33)
+	at utilities.ExtentReportListener.onTestFailure(ExtentReportListener.java:97)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:115)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:777)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-12-27 22:02:22.225 [TestNG-tests-1] INFO  testCases.TC_002AccountRegistrationTestDDTxlsx - Browser closed successfully.
+2025-12-27 22:02:22.595 [TestNG-tests-1] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2025-12-27 22:02:22.599 [TestNG-tests-1] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2025-12-27 22:02:22.599 [TestNG-tests-1] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}

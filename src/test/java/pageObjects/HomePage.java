@@ -35,16 +35,9 @@ public class HomePage extends BasePage {
         }
     }
 
-    public void clickBookStoreApplicationLink() {
-        try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            WebElement element = wait.until(ExpectedConditions.elementToBeClickable(linkBookStoreApplication));
-
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
-
-        } catch (Exception e) {
-            System.out.println("Unable to click Book Store Application link: " + e.getMessage());
-        }
+    public void clickBookStoreApplicationLink(){
+        jsClick(linkBookStoreApplication);
     }
+
 
 }

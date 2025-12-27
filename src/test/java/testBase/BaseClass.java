@@ -20,9 +20,9 @@ import java.time.Duration;
 
 public class BaseClass {
 
-    protected WebDriver driver;
-    protected ChromeOptions chromeOptions;
-    protected Logger logger;
+    public WebDriver driver;
+    public ChromeOptions chromeOptions;
+    public Logger logger;
 
     @BeforeClass
     public void setup() throws IOException {
