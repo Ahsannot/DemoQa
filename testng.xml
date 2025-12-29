@@ -8,7 +8,9 @@
     <test name="Account Registration Tests">
         <classes>
 <!--            <class name="testCases.TC_001AccountRegistrationTest"/>-->
-            <class name="testCases.TC_002AccountRegistrationTestDDTxlsx"/>
+<!--            <class name="testCases.TC_002AccountRegistrationTestDDTxlsx"/>-->
+            <class name="testCases.TC_003AccountRegistrationTestDDTDB"/>
+
         </classes>
     </test>
 
