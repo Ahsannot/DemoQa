@@ -26,12 +26,14 @@ public class TC_003AccountRegistrationTestDDTDB extends BaseClass {
                                     String lname,
                                     String uname,
                                     String password,
-                                    String expectedResult) {
+                                    String expectedResult) throws InterruptedException {
 
         logger.info("===== Starting Registration DB DDT Test for user: {} =====", uname);
 
-        String actualResult = "Fail"; // default as Fail
+        String actualResult = "Fail"; // default
+        boolean testFailed = false; // track for TestNG
         SoftAssert softAssert = new SoftAssert();
+        String alertText = "";
 
         try {
             // -------------------- Home Page --------------------
@@ -60,51 +62,61 @@ public class TC_003AccountRegistrationTestDDTDB extends BaseClass {
             registerPage.enterPassword(password);
             registerPage.clickRegisterButton();
 
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-            Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-            String alertText = alert.getText();
+            // -------------------- Handle alert safely --------------------
+            try {
+                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+                Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+                alertText = alert.getText();
 
-            validatePageMessageSoft(alertText,
-                    "User Register Successfully.", "Registration Alert", softAssert);
+                validatePageMessageSoft(alertText,
+                        "User Register Successfully.", "Registration Alert", softAssert);
 
-            if (alertText.contains("User Register Successfully.")) {
-                actualResult = "Pass";
+                if (alertText.contains("User Register Successfully.")) {
+                    actualResult = "Pass";
+                } else {
+                    actualResult = "Fail";
+                    testFailed = true;
+                }
+
+                alert.accept();
+            } catch (Exception e) {
+                logger.error("Alert did not appear for user {}: {}", uname, e.getMessage());
+                actualResult = "Fail";
+                testFailed = true;
+                alertText = "No alert displayed";
             }
 
-            alert.accept();
+            // -------------------- Soft assertions --------------------
+            try {
+                softAssert.assertAll(); // throws AssertionError if any soft assert failed
+            } catch (AssertionError ae) {
+                actualResult = "Fail";
+                testFailed = true;
+                logger.error("Soft assertions failed for user {}: {}", uname, ae.getMessage());
+            }
 
-        } catch (Exception e) {
-            logger.error("Exception occurred for user: {} | {}", uname, e.getMessage());
-            softAssert.fail("Exception occurred: " + e.getMessage());
-        }
+        } finally {
+            // -------------------- Write-back to DB --------------------
+            String testStatus;
+            if (actualResult.equals("Pass")) {
+                testStatus = "Test Passed";
+                DBResultUpdater.updateRetryFlag(uname, "N");
+            } else {
+                testStatus = "Test Failed";
+                DBResultUpdater.updateRetryFlag(uname, "Y");
+            }
 
-        // -------------------- Final Assertion --------------------
-        try {
-            softAssert.assertAll(); // throws AssertionError if any soft assert failed
-            actualResult = "Pass";   // mark as Pass if all soft assertions passed
-        } catch (AssertionError ae) {
-            actualResult = "Fail";   // mark as Fail if any assertion failed
-            logger.error("Assertions failed for user {}: {}", uname, ae.getMessage());
-        }
-
-        // -------------------- Write-back to DB --------------------
-        try {
-            // Mark testStatus strictly based on actualResult
-            String testStatus = actualResult.equals("Pass") ? "Test Passed" : "Test Failed";
-
-            // Update DB with actual result and test status
             DBResultUpdater.updateResult(uname, actualResult, testStatus);
 
-            // retry_flag = 'Y' only if test failed, otherwise 'N'
-            DBResultUpdater.updateRetryFlag(uname, actualResult.equals("Pass") ? "N" : "Y");
+            // Navigate back to base URL for next iteration
+            driver.navigate().to(ConfigReader.getProperty("baseURL"));
 
-        } catch (Exception ex) {
-            logger.error("DB write-back failed for user: {} | {}", uname, ex.getMessage());
+            logger.info("===== Finished Registration DB DDT Test for user: {} | Result: {} =====", uname, actualResult);
         }
 
-        // Navigate back to base URL
-        driver.navigate().to(ConfigReader.getProperty("baseURL"));
-
-        logger.info("===== Finished Registration DB DDT Test for user: {} =====", uname);
+        // -------------------- Propagate failure to TestNG --------------------
+        if (testFailed) {
+            throw new AssertionError("Test failed for user: " + uname + " | Alert: " + alertText);
+        }
     }
 }
