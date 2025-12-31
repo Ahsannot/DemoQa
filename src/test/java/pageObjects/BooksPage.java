@@ -15,24 +15,36 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
+// BooksPage class represents the "Books" page of the application
+// Contains locators and actions specific to this page
 public class BooksPage extends BasePage {
 
+    // Logger instance for logging info, error, and debug messages
     public Logger logger = LogManager.getLogger(BooksPage.class);
 
+    // Constructor: initializes the page with WebDriver instance
     public BooksPage(WebDriver driver){
         super(driver);
     }
 
     // ************************ LOCATORS ************************
+    // Web elements located using @FindBy annotation
 
+    // Locator for "Book Store" text on the page
     @FindBy(xpath = "//span[normalize-space()='Book Store']")
     WebElement text_BookStore;
 
+    // Locator for "Login" link on the page
     @FindBy(xpath = "//span[normalize-space()='Login']")
     WebElement linkLogin;
 
     // ************************ ACTION METHODS ************************
 
+    /**
+     * Fetches the visible confirmation message from the page.
+     * Waits up to 10 seconds for the element to appear.
+     * @return the text of the confirmation message or null if not found
+     */
     public String getConfirmationMessage(){
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -47,71 +59,79 @@ public class BooksPage extends BasePage {
         }
     }
 
+    /**
+     * Clicks on the "Login" link using JavaScript click (jsClick) method
+     */
     public void clickLoginLink(){
         try {
-            jsClick(linkLogin);
+            jsClick(linkLogin); // Uses JS click to avoid element overlay issues
             logger.info("Clicked on Login link.");
         } catch (Exception e) {
             logger.error("Error clicking Login link: " + e.getMessage());
         }
     }
 
-    // ************************ GET ALL LINKS DYNAMICALLY ************************
+    // ************************ GET ALL LINKS WITH TEXT ************************
 
     /**
-     * Get all href attributes from the page links dynamically
-     * @return List of all link URLs
+     * Get all <a> link texts and their corresponding URLs dynamically
+     * @return List of strings in the format: "LinkText -> URL"
      */
-    public List<String> getAllLinkUrls() {
-        List<String> urls = new ArrayList<>();
+    public List<String> getAllLinksWithText() {
+        List<String> links = new ArrayList<>();
 
-        // Wait for all links to appear
+        // Wait until at least one <a> element is present
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.tagName("a")));
 
+        // Find all <a> elements on the page
         List<WebElement> allLinks = driver.findElements(By.tagName("a"));
         logger.info("Total <a> elements found: " + allLinks.size());
 
+        // Iterate through each link and extract text and href
         for (WebElement link : allLinks) {
             String url = link.getAttribute("href");
-            String text = link.getText();
-            logger.info("Link found: '" + text + "' -> " + url);
+            String text = link.getText().trim();
 
+            // Only consider links with non-empty href
             if (url != null && !url.isEmpty()) {
-                urls.add(url);
+                links.add(text + " -> " + url);
+                logger.info("Link found: " + text + " -> " + url);
             }
         }
 
-        logger.info("Total non-empty href links: " + urls.size());
-        return urls;
+        logger.info("Total valid links found: " + links.size());
+        return links;
     }
 
+    // ************************ BROKEN LINK CHECK ************************
 
-    // ************************ BROKEN LINK CHECK WITH LOGGER ************************
-
+    /**
+     * Checks all links on the page for broken URLs
+     * Uses HTTP response code to determine validity
+     * @return List of broken links with their response codes
+     */
     public List<String> getBrokenLinks() {
-
         List<String> brokenLinks = new ArrayList<>();
-        List<WebElement> allLinks = driver.findElements(By.tagName("a")); // dynamic fetch
+        List<WebElement> allLinks = driver.findElements(By.tagName("a"));
 
         for (WebElement link : allLinks) {
             String url = link.getAttribute("href");
 
-            // Skip invalid links
-            if (url == null || url.isEmpty()
-                    || url.startsWith("mailto")
-                    || url.startsWith("javascript")) {
+            // Skip links that are null, empty, mailto:, or javascript:
+            if (url == null || url.isEmpty() || url.startsWith("mailto") || url.startsWith("javascript")) {
                 continue;
             }
 
             try {
-                HttpURLConnection connection =
-                        (HttpURLConnection) new URL(url).openConnection();
-                connection.setConnectTimeout(5000);
+                // Open HTTP connection and check response code
+                HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+                connection.setConnectTimeout(5000); // 5 seconds timeout
                 connection.connect();
 
                 int responseCode = connection.getResponseCode();
 
+                // Consider response codes 400+ as broken
                 if (responseCode >= 400) {
                     logger.error("Broken link detected: " + url + " --> " + responseCode);
                     brokenLinks.add(url + " --> " + responseCode);

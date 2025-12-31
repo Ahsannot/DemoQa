@@ -88,3 +88,60 @@
 2025-12-31 12:50:02.276 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
 2025-12-31 12:50:02.276 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
 2025-12-31 12:50:05.731 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2025-12-31 13:06:10.100 [main] INFO  testCases.TC_004BooksPageTest - Starting test...
+2025-12-31 13:06:37.811 [main] INFO  testCases.TC_004BooksPageTest - Navigated to: https://demoqa.com/
+2025-12-31 13:06:37.834 [main] INFO  testCases.TC_004BooksPageTest - ===== Starting Books Page Test =====
+2025-12-31 13:06:37.912 [main] INFO  testCases.TC_004BooksPageTest - HomePage validation passed
+2025-12-31 13:06:38.128 [main] INFO  pageObjects.BooksPage - Confirmation message fetched: Book Store
+2025-12-31 13:06:38.128 [main] INFO  testCases.TC_004BooksPageTest - BooksPage validation passed
+2025-12-31 13:06:38.162 [main] INFO  pageObjects.BooksPage - Total <a> elements found: 3
+2025-12-31 13:06:38.200 [main] INFO  pageObjects.BooksPage - Link found: '' -> null
+2025-12-31 13:06:38.230 [main] INFO  pageObjects.BooksPage - Link found: '' -> https://demoqa.com/
+2025-12-31 13:06:38.285 [main] INFO  pageObjects.BooksPage - Link found: '' -> null
+2025-12-31 13:06:38.286 [main] INFO  pageObjects.BooksPage - Total non-empty href links: 1
+2025-12-31 13:06:38.286 [main] INFO  testCases.TC_004BooksPageTest - ----- All Links on Books Page -----
+2025-12-31 13:06:38.286 [main] INFO  testCases.TC_004BooksPageTest - https://demoqa.com/
+2025-12-31 13:06:39.325 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/ --> 200
+2025-12-31 13:06:40.037 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781449325862 --> 200
+2025-12-31 13:06:40.721 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781449331818 --> 200
+2025-12-31 13:06:41.439 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781449337711 --> 200
+2025-12-31 13:06:42.168 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781449365035 --> 200
+2025-12-31 13:06:42.887 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781491904244 --> 200
+2025-12-31 13:06:43.525 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781491950296 --> 200
+2025-12-31 13:06:44.358 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781593275846 --> 200
+2025-12-31 13:06:45.055 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781593277574 --> 200
+2025-12-31 13:06:45.076 [main] INFO  pageObjects.BooksPage - No broken links found on the Books Page.
+2025-12-31 13:06:45.076 [main] INFO  testCases.TC_004BooksPageTest - No broken links found on the page.
+2025-12-31 13:06:45.076 [main] INFO  testCases.TC_004BooksPageTest - ===== Books Page Test Completed =====
+2025-12-31 13:06:45.289 [main] INFO  testCases.TC_004BooksPageTest - Browser closed successfully.
+2025-12-31 13:06:45.626 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2025-12-31 13:06:45.626 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2025-12-31 13:06:45.626 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2025-12-31 13:06:49.052 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2025-12-31 13:17:05.682 [main] INFO  testCases.TC_004BooksPageTest - Starting test...
+2025-12-31 13:17:14.575 [main] INFO  testCases.TC_004BooksPageTest - Navigated to: https://demoqa.com/
+2025-12-31 13:17:14.614 [main] INFO  testCases.TC_004BooksPageTest - ===== Starting Books Page Test =====
+2025-12-31 13:17:14.768 [main] INFO  testCases.TC_004BooksPageTest - HomePage validation passed
+2025-12-31 13:17:14.990 [main] INFO  pageObjects.BooksPage - Confirmation message fetched: Book Store
+2025-12-31 13:17:14.990 [main] INFO  testCases.TC_004BooksPageTest - BooksPage validation passed
+2025-12-31 13:17:15.042 [main] INFO  pageObjects.BooksPage - Total <a> elements found: 3
+2025-12-31 13:17:15.104 [main] INFO  pageObjects.BooksPage - Link found:  -> https://demoqa.com/
+2025-12-31 13:17:15.132 [main] INFO  pageObjects.BooksPage - Total valid links found: 1
+2025-12-31 13:17:15.133 [main] INFO  testCases.TC_004BooksPageTest - ----- All Links on Books Page -----
+2025-12-31 13:17:16.238 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/ --> 200
+2025-12-31 13:17:17.002 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781449325862 --> 200
+2025-12-31 13:17:17.679 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781449331818 --> 200
+2025-12-31 13:17:18.384 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781449337711 --> 200
+2025-12-31 13:17:19.045 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781449365035 --> 200
+2025-12-31 13:17:19.748 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781491904244 --> 200
+2025-12-31 13:17:20.454 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781491950296 --> 200
+2025-12-31 13:17:21.144 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781593275846 --> 200
+2025-12-31 13:17:21.882 [main] INFO  pageObjects.BooksPage - Valid link: https://demoqa.com/books?book=9781593277574 --> 200
+2025-12-31 13:17:21.898 [main] INFO  pageObjects.BooksPage - No broken links found on the Books Page.
+2025-12-31 13:17:21.898 [main] INFO  testCases.TC_004BooksPageTest - No broken links found on the page.
+2025-12-31 13:17:21.898 [main] INFO  testCases.TC_004BooksPageTest - ===== Books Page Test Completed =====
+2025-12-31 13:17:22.120 [main] INFO  testCases.TC_004BooksPageTest - Browser closed successfully.
+2025-12-31 13:17:22.424 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2025-12-31 13:17:22.424 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2025-12-31 13:17:22.424 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2025-12-31 13:17:26.031 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
