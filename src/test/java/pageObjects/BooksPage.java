@@ -1,12 +1,17 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BooksPage extends BasePage {
 
@@ -21,7 +26,6 @@ public class BooksPage extends BasePage {
 
     @FindBy(xpath = "//span[normalize-space()='Login']")
     WebElement linkLogin;
-
 
     //   ************************ ACTION METHODS ************************
 
@@ -40,4 +44,41 @@ public class BooksPage extends BasePage {
         jsClick(linkLogin);
     }
 
+    // ************************ BROKEN LINK CHECK ************************
+
+    public List<String> getBrokenLinks() {
+
+        List<String> brokenLinks = new ArrayList<>();
+
+        List<WebElement> links = driver.findElements(By.tagName("a"));
+
+        for (WebElement link : links) {
+            String url = link.getAttribute("href");
+
+            // Skip invalid links
+            if (url == null || url.isEmpty()
+                    || url.startsWith("mailto")
+                    || url.startsWith("javascript")) {
+                continue;
+            }
+
+            try {
+                HttpURLConnection connection =
+                        (HttpURLConnection) new URL(url).openConnection();
+
+                connection.setConnectTimeout(5000);
+                connection.connect();
+
+                int responseCode = connection.getResponseCode();
+
+                if (responseCode >= 400) {
+                    brokenLinks.add(url + " --> " + responseCode);
+                }
+
+            } catch (Exception e) {
+                brokenLinks.add(url + " --> Exception");
+            }
+        }
+        return brokenLinks;
+    }
 }
