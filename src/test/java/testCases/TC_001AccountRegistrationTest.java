@@ -27,7 +27,6 @@ public class TC_001AccountRegistrationTest extends BaseClass {
                 "HomePage"
         );
         homePage.clickBookStoreApplicationLink();
-        logger.info("===== Starting Account Registration Test =====");
 
         BooksPage booksPage = new BooksPage(driver);
         validatePageMessageHard(
