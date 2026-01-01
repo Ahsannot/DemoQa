@@ -50,10 +50,7 @@ public class ExcelUtils {
             if (sheet == null) {
                 throw new IllegalArgumentException("Sheet '" + sheetName + "' not found in workbook.");
             }
-
-            System.out.println("Loaded sheet: " + sheetName);
             logger.info("Loaded sheet: {}", sheetName);
-
         } catch (IOException e) {
             logger.error("Error opening Excel file", e);
             throw e;

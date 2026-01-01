@@ -15,7 +15,7 @@ public class BasePage {
     }
 
     // ================= HELPER WHEN ADD IS ON THE ELEMENT THAT RESTRICT TO CLICK ON ELEMENT =================
-    protected void jsClick(WebElement element) {
+    public void jsClick(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView({block:'center'});", element);
         js.executeScript("arguments[0].click();", element);
