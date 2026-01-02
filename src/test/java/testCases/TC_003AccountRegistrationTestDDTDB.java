@@ -57,7 +57,7 @@ public class TC_003AccountRegistrationTestDDTDB extends BaseClass {
             RegisterPage registerPage = new RegisterPage(driver);
             registerPage.enterFirstName(fname);
             registerPage.enterLastName(lname);
-            registerPage.enterUserName(uname);
+            registerPage.enterUserName(uname); // <-- username
             registerPage.enterPassword(password);
             registerPage.clickRegisterButton();
 
@@ -76,11 +76,11 @@ public class TC_003AccountRegistrationTestDDTDB extends BaseClass {
             alert.accept();
 
             // -------------------- Soft assertion check --------------------
-            softAssert.assertAll(); // must not catch it
+            softAssert.assertAll(); // fail test if needed
 
         } finally {
-            // -------------------- Write-back to DB --------------------
-            // Determine the test status
+            // -------------------- Write-back to DB using username --------------------
+            // Determine test status
             String testStatus;
             if (actualResult.equals("Pass")) {
                 testStatus = "Test Passed";
@@ -91,16 +91,17 @@ public class TC_003AccountRegistrationTestDDTDB extends BaseClass {
             // Update the result in the database
             DBResultUpdater.updateResult(uname, actualResult, testStatus);
 
-            // Determine the retry flag
+            // Determine retry flag
             String retryFlag;
             if (actualResult.equals("Pass")) {
-                retryFlag = "N"; // No need to retry
+                retryFlag = "N"; // No retry needed
             } else {
                 retryFlag = "Y"; // Retry next time
             }
 
             // Update the retry flag in the database
             DBResultUpdater.updateRetryFlag(uname, retryFlag);
+
 
             // Navigate back to base URL for next iteration
             driver.navigate().to(ConfigReader.getProperty("baseURL"));

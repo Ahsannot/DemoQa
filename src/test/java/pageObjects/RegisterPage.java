@@ -14,7 +14,8 @@ public class RegisterPage extends BasePage {
         super(driver);
     }
 
-    //   ************************ LOCATORS ************************
+    // ************************ LOCATORS ************************
+
     @FindBy(xpath = "//h4[normalize-space()='Register to Book Store']")
     WebElement text_RegisterPage;
 
@@ -33,7 +34,8 @@ public class RegisterPage extends BasePage {
     @FindBy(xpath = "//button[@id='register']")
     WebElement btnRegister;
 
-    //   ************************ ACTION METHODS ************************
+    // ************************ ACTION METHODS ************************
+
     public String getConfirmationMessage() {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -61,8 +63,14 @@ public class RegisterPage extends BasePage {
         textPassword.sendKeys(password);
     }
 
-    public void clickRegisterButton() throws InterruptedException {
-        Thread.sleep(10000);
-        jsClick(btnRegister); // removed Thread.sleep for better practice
+    public void clickRegisterButton() {
+        try {
+            // Wait until the button is clickable
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.elementToBeClickable(btnRegister));
+            jsClick(btnRegister); // JavaScript click to handle any overlay issues
+        } catch (Exception e) {
+            System.out.println("Error clicking Register button: " + e.getMessage());
+        }
     }
 }

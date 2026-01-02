@@ -13,16 +13,35 @@ public class DBResultUpdater {
                 ConfigReader.getProperty("db_user"),
                 ConfigReader.getProperty("db_password"))) {
 
+             /*
+             Create a SQL query to count how many rows exist with this username
+             PreparedStatement is used to safely run SQL queries.
+             COUNT(*) means: count how many rows match the condition.
+             ? is a placeholder for the username value.
+              */
+
             PreparedStatement checkStmt = con.prepareStatement(
                     "SELECT COUNT(*) FROM register_data WHERE uname = ?");
+
+            // Replace the '?' placeholder with the actual username
             checkStmt.setString(1, uname);
+
+            // Execute the query and store the result
             ResultSet rs = checkStmt.executeQuery();
+
+            //ResultSet cursor starts before the first row.
+            //rs.next() moves it to the first row.
             rs.next();
+
+            // Read the value from the first column (COUNT(*))
+            //Get the value from column 1
             int count = rs.getInt(1);
 
             if (count > 0) {
                 PreparedStatement ps = con.prepareStatement(
                         "UPDATE register_data SET actual_result=?, test_status=?, execution_time=NOW() WHERE uname=?");
+
+                //setString() is used to put a String value into a SQL query placeholder (?).
                 ps.setString(1, actualResult);
                 ps.setString(2, testStatus);
                 ps.setString(3, uname);

@@ -11,6 +11,10 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * DataProvider to fetch registration test data from database.
+ * Using username as the unique identifier.
+ */
 public class RegisterDBDataProvider {
 
     public static Logger logger = LogManager.getLogger(RegisterDBDataProvider.class);
@@ -28,6 +32,7 @@ public class RegisterDBDataProvider {
              Statement stmt = con.createStatement();
         ) {
 
+            // Fetch records that need retry or not executed yet
             String query = "SELECT fname, lname, uname, password, expected_result " +
                     "FROM register_data WHERE retry_flag='Y' OR retry_flag IS NULL";
 
@@ -40,7 +45,7 @@ public class RegisterDBDataProvider {
                 dataList.add(new Object[]{
                         rs.getString("fname"),
                         rs.getString("lname"),
-                        rs.getString("uname"),
+                        rs.getString("uname"),  // <-- username
                         rs.getString("password"),
                         rs.getString("expected_result")
                 });
