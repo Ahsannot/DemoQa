@@ -68,25 +68,41 @@ public class DBResultUpdater {
                 ConfigReader.getProperty("db_user"),
                 ConfigReader.getProperty("db_password"))) {
 
-            PreparedStatement ps = con.prepareStatement(
-                    "UPDATE register_data SET retry_flag=? WHERE uname=?");
-            ps.setString(1, flag);
-            ps.setString(2, uname);
-            int rows = ps.executeUpdate();
+            // 1️⃣ Check how many rows exist with this username
+            PreparedStatement checkStmt = con.prepareStatement(
+                    "SELECT COUNT(*) FROM register_data WHERE uname = ?"
+            );
+            checkStmt.setString(1, uname);
 
-            if (rows == 0) {
+            ResultSet rs = checkStmt.executeQuery();
+            rs.next(); // move to first row
+
+            int count = rs.getInt(1); // number of rows with this username
+
+            // 2️⃣ If record exists → UPDATE
+            if (count > 0) {
+                PreparedStatement ps = con.prepareStatement(
+                        "UPDATE register_data SET retry_flag=? WHERE uname=?"
+                );
+                ps.setString(1, flag);
+                ps.setString(2, uname);
+                ps.executeUpdate();
+                ps.close();
+            }
+            // 3️⃣ If record does not exist → INSERT
+            else {
                 PreparedStatement psInsert = con.prepareStatement(
-                        "INSERT INTO register_data (uname, retry_flag) VALUES (?, ?)");
+                        "INSERT INTO register_data (uname, retry_flag) VALUES (?, ?)"
+                );
                 psInsert.setString(1, uname);
                 psInsert.setString(2, flag);
                 psInsert.executeUpdate();
                 psInsert.close();
             }
 
-            ps.close();
-
         } catch (Exception e) {
             System.out.println("Updating retry flag failed for user: " + uname + " | " + e.getMessage());
         }
     }
+
 }
