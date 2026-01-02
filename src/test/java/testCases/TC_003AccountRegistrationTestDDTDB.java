@@ -31,9 +31,8 @@ public class TC_003AccountRegistrationTestDDTDB extends BaseClass {
         logger.info("===== Starting Registration DB DDT Test for user: {} =====", uname);
 
         String actualResult = "Fail"; // default
-        boolean testFailed = false; // track for TestNG
+        String alertText = "No alert displayed";
         SoftAssert softAssert = new SoftAssert();
-        String alertText = "";
 
         try {
             // -------------------- Home Page --------------------
@@ -63,60 +62,51 @@ public class TC_003AccountRegistrationTestDDTDB extends BaseClass {
             registerPage.clickRegisterButton();
 
             // -------------------- Handle alert safely --------------------
-            try {
-                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-                Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-                alertText = alert.getText();
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+            alertText = alert.getText();
 
-                validatePageMessageSoft(alertText,
-                        "User Register Successfully.", "Registration Alert", softAssert);
+            validatePageMessageSoft(alertText,
+                    expectedResult, "Registration Alert", softAssert);
 
-                if (alertText.contains("User Register Successfully.")) {
-                    actualResult = "Pass";
-                } else {
-                    actualResult = "Fail";
-                    testFailed = true;
-                }
-
-                alert.accept();
-            } catch (Exception e) {
-                logger.error("Alert did not appear for user {}: {}", uname, e.getMessage());
-                actualResult = "Fail";
-                testFailed = true;
-                alertText = "No alert displayed";
+            if (alertText.contains(expectedResult)) {
+                actualResult = "Pass";
             }
 
-            // -------------------- Soft assertions --------------------
-            try {
-                softAssert.assertAll(); // throws AssertionError if any soft assert failed
-            } catch (AssertionError ae) {
-                actualResult = "Fail";
-                testFailed = true;
-                logger.error("Soft assertions failed for user {}: {}", uname, ae.getMessage());
-            }
+            alert.accept();
+
+            // -------------------- Soft assertion check --------------------
+            softAssert.assertAll(); // must not catch it
 
         } finally {
             // -------------------- Write-back to DB --------------------
+            // Determine the test status
             String testStatus;
             if (actualResult.equals("Pass")) {
                 testStatus = "Test Passed";
-                DBResultUpdater.updateRetryFlag(uname, "N");
             } else {
                 testStatus = "Test Failed";
-                DBResultUpdater.updateRetryFlag(uname, "Y");
             }
 
+            // Update the result in the database
             DBResultUpdater.updateResult(uname, actualResult, testStatus);
+
+            // Determine the retry flag
+            String retryFlag;
+            if (actualResult.equals("Pass")) {
+                retryFlag = "N"; // No need to retry
+            } else {
+                retryFlag = "Y"; // Retry next time
+            }
+
+            // Update the retry flag in the database
+            DBResultUpdater.updateRetryFlag(uname, retryFlag);
 
             // Navigate back to base URL for next iteration
             driver.navigate().to(ConfigReader.getProperty("baseURL"));
 
-            logger.info("===== Finished Registration DB DDT Test for user: {} | Result: {} =====", uname, actualResult);
-        }
-
-        // -------------------- Propagate failure to TestNG --------------------
-        if (testFailed) {
-            throw new AssertionError("Test failed for user: " + uname + " | Alert: " + alertText);
+            logger.info("===== Finished Registration DB DDT Test for user: {} | Result: {} =====",
+                    uname, actualResult);
         }
     }
 }

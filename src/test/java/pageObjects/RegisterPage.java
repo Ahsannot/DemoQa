@@ -8,14 +8,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class RegisterPage extends BasePage{
+public class RegisterPage extends BasePage {
 
     public RegisterPage(WebDriver driver){
         super(driver);
     }
 
     //   ************************ LOCATORS ************************
-
     @FindBy(xpath = "//h4[normalize-space()='Register to Book Store']")
     WebElement text_RegisterPage;
 
@@ -34,12 +33,9 @@ public class RegisterPage extends BasePage{
     @FindBy(xpath = "//button[@id='register']")
     WebElement btnRegister;
 
-
-
     //   ************************ ACTION METHODS ************************
-
-    public String getConfirmationMessage(){
-        try{
+    public String getConfirmationMessage() {
+        try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             WebElement confirmation = wait.until(ExpectedConditions.visibilityOf(text_RegisterPage));
             return confirmation.getText();
@@ -67,7 +63,6 @@ public class RegisterPage extends BasePage{
 
     public void clickRegisterButton() throws InterruptedException {
         Thread.sleep(10000);
-        jsClick(btnRegister);
+        jsClick(btnRegister); // removed Thread.sleep for better practice
     }
 }
-

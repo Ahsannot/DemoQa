@@ -6,7 +6,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -40,13 +39,16 @@ public class BaseClass {
         logger.info("Navigated to: " + ConfigReader.getProperty("baseURL"));
     }
 
-    // ================= HARD ASSERT (USE ONLY IN TC_001) =================
+    // ================= HARD ASSERT =================
     public void validatePageMessageHard(String actual, String expected, String pageName) {
-        Assert.assertEquals(actual, expected, pageName + " validation failed");
+        if (!actual.equals(expected)) {
+            logger.error(pageName + " validation failed | Expected: " + expected + " | Actual: " + actual);
+            throw new AssertionError(pageName + " validation failed");
+        }
         logger.info(pageName + " validation passed");
     }
 
-    // ================= SOFT / DDT-SAFE VALIDATION (USE IN TC_002) =================
+    // ================= SOFT / DDT-SAFE VALIDATION =================
     public boolean validatePageMessageSoft(String actual, String expected, String pageName, SoftAssert softAssert) {
         if (actual.equals(expected)) {
             logger.info(pageName + " validation passed");
@@ -74,7 +76,7 @@ public class BaseClass {
         return RandomStringUtils.randomAlphanumeric(8);
     }
 
-    // Attach driver for reporting
+    // Attach driver to ITestResult
     @BeforeMethod(alwaysRun = true)
     public void attachDriverToTestResult(Method method, ITestResult result) {
         result.setAttribute("driver", driver);

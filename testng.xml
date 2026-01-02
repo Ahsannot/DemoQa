@@ -9,8 +9,8 @@
         <classes>
 <!--            <class name="testCases.TC_001AccountRegistrationTest"/>-->
 <!--            <class name="testCases.TC_002AccountRegistrationTestDDTxlsx"/>-->
-<!--            <class name="testCases.TC_003AccountRegistrationTestDDTDB"/>-->
-            <class name="testCases.TC_004BooksPageTest"/>
+            <class name="testCases.TC_003AccountRegistrationTestDDTDB"/>
+<!--            <class name="testCases.TC_004BooksPageTest"/>-->
         </classes>
     </test>
 

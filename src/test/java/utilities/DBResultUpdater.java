@@ -13,7 +13,6 @@ public class DBResultUpdater {
                 ConfigReader.getProperty("db_user"),
                 ConfigReader.getProperty("db_password"))) {
 
-            // Check if user already exists
             PreparedStatement checkStmt = con.prepareStatement(
                     "SELECT COUNT(*) FROM register_data WHERE uname = ?");
             checkStmt.setString(1, uname);
@@ -22,7 +21,6 @@ public class DBResultUpdater {
             int count = rs.getInt(1);
 
             if (count > 0) {
-                // User exists -> UPDATE
                 PreparedStatement ps = con.prepareStatement(
                         "UPDATE register_data SET actual_result=?, test_status=?, execution_time=NOW() WHERE uname=?");
                 ps.setString(1, actualResult);
@@ -31,7 +29,6 @@ public class DBResultUpdater {
                 ps.executeUpdate();
                 ps.close();
             } else {
-                // User does not exist -> INSERT
                 PreparedStatement ps = con.prepareStatement(
                         "INSERT INTO register_data (uname, actual_result, test_status, execution_time) VALUES (?, ?, ?, NOW())");
                 ps.setString(1, uname);
@@ -58,7 +55,6 @@ public class DBResultUpdater {
             ps.setString(2, uname);
             int rows = ps.executeUpdate();
 
-            // If no rows updated, maybe user does not exist -> insert
             if (rows == 0) {
                 PreparedStatement psInsert = con.prepareStatement(
                         "INSERT INTO register_data (uname, retry_flag) VALUES (?, ?)");
