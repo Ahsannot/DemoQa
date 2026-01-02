@@ -10,13 +10,15 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /*
 onStart()        → Initialize report
 onTestStart()   → Create test entry
 onTestSuccess() → Mark PASS
 onTestFailure() → Mark FAIL + screenshot
-onFinish()      → Flush report
+onFinish()      → Flush report + Email sender
 
  */
 
@@ -34,11 +36,11 @@ public class ExtentReportListener implements ITestListener {
         System.out.println("onStart - Test Suite started: " + context.getName());
 
         // Generates a unique timestamp
-        String timestamp = new java.text.SimpleDateFormat("yyyyMMdd_HHmmss")
-                .format(new java.util.Date());
+        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 
-        // Creates a folder named reports
-        new java.io.File("reports").mkdirs();
+        // Create a folder named "reports" if it doesn't already exist
+        File folder = new File("reports");
+        folder.mkdirs(); // creates the folder (and parent folders if needed)
 
         // Final report file name / report file path
         String reportPath = "reports/SparkReport_" + timestamp + ".html";

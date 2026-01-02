@@ -30,13 +30,22 @@ public class ScreenshotUtil {
 
         try {
             // Capture screenshot as a temporary file
-            File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            // File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+            // Step 1: Turn the driver into a screenshot-taking object
+            TakesScreenshot ts = (TakesScreenshot) driver;
+
+            // Step 2: Take the screenshot and store it as a file
+            File source = ts.getScreenshotAs(OutputType.FILE);
+
+            String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
 
             // Prepare destination folder and filename
             String dir = System.getProperty("user.dir") + "/screenshots/";
+
             // Checks if the directory exist if not will create it
             Files.createDirectories(Paths.get(dir));
-            String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+
             String path = dir + screenshotName + "_" + timestamp + ".png";
 
             // Copy screenshot to destination
