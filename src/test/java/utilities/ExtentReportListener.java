@@ -66,6 +66,7 @@ public class ExtentReportListener implements ITestListener {
         test.info("Test Started: " + methodName + " in class " + className);
     }
 
+    // ITestResult result contains details about the test that just ran
     public void onTestSuccess(ITestResult result) {
 
         // Get class and method name

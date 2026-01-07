@@ -17,6 +17,9 @@ public class HomePage extends BasePage {
 
     //   ************************ LOCATORS ************************
 
+    @FindBy(xpath = "//h5[normalize-space()='Elements']")
+    WebElement linkElements;
+
     @FindBy(xpath = "//h5[normalize-space()='Book Store Application']")
     WebElement linkBookStoreApplication;
 
@@ -33,6 +36,10 @@ public class HomePage extends BasePage {
             System.out.println("Error fetching confirmation message: " + e.getMessage());
             return null;
         }
+    }
+
+    public void clickElementsLink(){
+        jsClick(linkElements);
     }
 
     public void clickBookStoreApplicationLink(){
