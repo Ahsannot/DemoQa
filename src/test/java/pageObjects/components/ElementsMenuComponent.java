@@ -42,8 +42,6 @@ public class ElementsMenuComponent extends BasePage {
 
     // ************************ ACTION METHODS ************************
 
-    // ************************ ACTION METHODS ************************
-
     public void openTextBox() {
         linkTextBox.click();
     }
