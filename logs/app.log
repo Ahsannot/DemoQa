@@ -1,51 +1,22 @@
-2026-01-02 09:09:15.380 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - Starting test...
-2026-01-02 09:09:52.718 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - Navigated to: https://demoqa.com/
-2026-01-02 09:09:52.738 [main] INFO  utilities.RegisterDBDataProvider - ===== Starting DB DataProvider: RegisterDataDB =====
-2026-01-02 09:09:53.532 [main] INFO  utilities.RegisterDBDataProvider - Executing query: SELECT fname, lname, uname, password, expected_result FROM register_data WHERE retry_flag='Y' OR retry_flag IS NULL
-2026-01-02 09:09:53.578 [main] INFO  utilities.RegisterDBDataProvider - Total records fetched from DB: 5
-2026-01-02 09:09:53.578 [main] INFO  utilities.RegisterDBDataProvider - ===== Finished DB DataProvider: RegisterDataDB =====
-2026-01-02 09:09:53.667 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - ===== Starting Registration DB DDT Test for user: john_doe =====
-2026-01-02 09:09:53.859 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - HomePage validation passed
-2026-01-02 09:09:54.100 [main] INFO  pageObjects.BooksPage - Confirmation message fetched: Book Store
-2026-01-02 09:09:54.100 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - BooksPage validation passed
-2026-01-02 09:09:54.208 [main] INFO  pageObjects.BooksPage - Clicked on Login link.
-2026-01-02 09:09:54.360 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - LoginPage validation passed
-2026-01-02 09:10:11.715 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - ===== Finished Registration DB DDT Test for user: john_doe | Result: Fail =====
-2026-01-02 09:10:11.882 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/accountRegistration_20260102091011.png
-2026-01-02 09:10:11.905 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - ===== Starting Registration DB DDT Test for user: jane_smith =====
-2026-01-02 09:10:11.998 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - HomePage validation passed
-2026-01-02 09:10:12.126 [main] INFO  pageObjects.BooksPage - Confirmation message fetched: Book Store
-2026-01-02 09:10:12.126 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - BooksPage validation passed
-2026-01-02 09:10:12.192 [main] INFO  pageObjects.BooksPage - Clicked on Login link.
-2026-01-02 09:10:12.251 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - LoginPage validation passed
-2026-01-02 09:10:29.183 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - ===== Finished Registration DB DDT Test for user: jane_smith | Result: Fail =====
-2026-01-02 09:10:29.327 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/accountRegistration_20260102091029.png
-2026-01-02 09:10:29.336 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - ===== Starting Registration DB DDT Test for user: mike_brown =====
-2026-01-02 09:10:29.429 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - HomePage validation passed
-2026-01-02 09:10:29.566 [main] INFO  pageObjects.BooksPage - Confirmation message fetched: Book Store
-2026-01-02 09:10:29.566 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - BooksPage validation passed
-2026-01-02 09:10:29.639 [main] INFO  pageObjects.BooksPage - Clicked on Login link.
-2026-01-02 09:10:29.723 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - LoginPage validation passed
-2026-01-02 09:10:46.813 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - ===== Finished Registration DB DDT Test for user: mike_brown | Result: Fail =====
-2026-01-02 09:10:46.937 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/accountRegistration_20260102091046.png
-2026-01-02 09:10:46.941 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - ===== Starting Registration DB DDT Test for user: alice_green =====
-2026-01-02 09:10:46.999 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - HomePage validation passed
-2026-01-02 09:10:47.164 [main] INFO  pageObjects.BooksPage - Confirmation message fetched: Book Store
-2026-01-02 09:10:47.164 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - BooksPage validation passed
-2026-01-02 09:10:47.224 [main] INFO  pageObjects.BooksPage - Clicked on Login link.
-2026-01-02 09:10:47.290 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - LoginPage validation passed
-2026-01-02 09:11:05.266 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - ===== Finished Registration DB DDT Test for user: alice_green | Result: Fail =====
-2026-01-02 09:11:05.398 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/accountRegistration_20260102091105.png
-2026-01-02 09:11:05.398 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - ===== Starting Registration DB DDT Test for user: bob_white =====
-2026-01-02 09:11:05.481 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - HomePage validation passed
-2026-01-02 09:11:05.631 [main] INFO  pageObjects.BooksPage - Confirmation message fetched: Book Store
-2026-01-02 09:11:05.631 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - BooksPage validation passed
-2026-01-02 09:11:05.776 [main] INFO  pageObjects.BooksPage - Clicked on Login link.
-2026-01-02 09:11:05.838 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - LoginPage validation passed
-2026-01-02 09:11:22.869 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - ===== Finished Registration DB DDT Test for user: bob_white | Result: Fail =====
-2026-01-02 09:11:23.011 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/accountRegistration_20260102091122.png
-2026-01-02 09:11:23.321 [main] INFO  testCases.TC_003AccountRegistrationTestDDTDB - Browser closed successfully.
-2026-01-02 09:11:23.699 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-02 09:11:23.702 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-02 09:11:23.702 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-02 09:11:29.215 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-01-08 08:39:05.750 [main] INFO  testCases.TC_005TextBoxTest - Starting test...
+2026-01-08 08:39:23.374 [main] INFO  testCases.TC_005TextBoxTest - Navigated to: https://demoqa.com/
+2026-01-08 08:39:23.436 [main] INFO  testCases.TC_005TextBoxTest - ===== Starting TextBox Test =====
+2026-01-08 08:39:23.611 [main] INFO  testCases.TC_005TextBoxTest - ===== Home Page =====
+2026-01-08 08:39:23.809 [main] INFO  testCases.TC_005TextBoxTest - ===== Starting ElementsMenuComponent Page =====
+2026-01-08 08:39:25.212 [main] INFO  testCases.TC_005TextBoxTest - ===== Completing TextBox Test =====
+2026-01-08 08:39:27.407 [main] INFO  testCases.TC_005TextBoxTest - Browser closed successfully.
+2026-01-08 08:39:27.729 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-01-08 08:39:27.729 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-01-08 08:39:27.729 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-01-08 08:39:32.275 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-01-08 08:55:06.039 [main] INFO  testCases.TC_005TextBoxTest - Starting test...
+2026-01-08 08:55:13.884 [main] INFO  testCases.TC_005TextBoxTest - Navigated to: https://demoqa.com/
+2026-01-08 08:55:13.925 [main] INFO  testCases.TC_005TextBoxTest - ===== Starting TextBox Test =====
+2026-01-08 08:55:14.066 [main] INFO  testCases.TC_005TextBoxTest - ===== Home Page =====
+2026-01-08 08:55:14.212 [main] INFO  testCases.TC_005TextBoxTest - ===== Starting ElementsMenuComponent Page =====
+2026-01-08 08:55:15.286 [main] INFO  testCases.TC_005TextBoxTest - ===== Completing TextBox Test =====
+2026-01-08 08:55:15.621 [main] INFO  testCases.TC_005TextBoxTest - Browser closed successfully.
+2026-01-08 08:55:16.062 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-01-08 08:55:16.062 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-01-08 08:55:16.062 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-01-08 08:55:19.867 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com

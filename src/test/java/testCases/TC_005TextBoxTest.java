@@ -1,5 +1,7 @@
 package testCases;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.TextBoxPage;
@@ -30,11 +32,22 @@ public class TC_005TextBoxTest extends BaseClass {
         // Initialize TextBoxPage object
         TextBoxPage textBoxPage = new TextBoxPage(driver);
 
-        textBoxPage.enterUserName(randomAlphaNumeric().toUpperCase());
-        textBoxPage.enterUserEmail(randomAlphaNumeric() + "@gmail.com");
-        textBoxPage.enterCurrentAddress(randomString());
-        textBoxPage.enterPermanentAddress(randomString());
+        String userName = randomAlphaNumeric().toUpperCase();
+        String email = randomAlphaNumeric() + "@gmail.com";
+        String currentAddress = randomString();
+        String permanentAddress = randomString();
+
+        textBoxPage.enterUserName(userName);
+        textBoxPage.enterUserEmail(email);
+        textBoxPage.enterCurrentAddress(currentAddress);
+        textBoxPage.enterPermanentAddress(permanentAddress);
         textBoxPage.clickSubmitBtn();
+
+        // ASSERTIONS
+        Assert.assertEquals(textBoxPage.getNameOutput(), "Name:" + userName);
+        Assert.assertEquals(textBoxPage.getEmailOutput(), "Email:" + email);
+        Assert.assertTrue(textBoxPage.getCurrentAddressOutput().contains(currentAddress));
+        Assert.assertTrue(textBoxPage.getPermanentAddressOutput().contains(permanentAddress));
 
         logger.info("===== Completing TextBox Test =====");
     }
