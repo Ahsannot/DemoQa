@@ -60,10 +60,4 @@ public class CheckBoxPage extends BasePage {
                 .map(WebElement::getText)
                 .collect(Collectors.toList());
     }
-
-    // Optional: return the entire result text
-    public String getResultText() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        return wait.until(ExpectedConditions.visibilityOf(resultText)).getText();
-    }
 }
