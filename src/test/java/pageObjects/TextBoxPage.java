@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+
 public class TextBoxPage extends BasePage{
 
     public TextBoxPage(WebDriver driver){
@@ -27,7 +28,6 @@ public class TextBoxPage extends BasePage{
     @FindBy(xpath = "//button[@id='submit']")
     WebElement btnSubmit;
 
-
     //   ************************ ACTION METHODS ************************
 
     public void enterUserName(String userName){
@@ -49,4 +49,5 @@ public class TextBoxPage extends BasePage{
     public void clickSubmitBtn(){
         btnSubmit.click();
     }
+
 }
