@@ -11,7 +11,10 @@
 <!--            <class name="testCases.TC_002AccountRegistrationTestDDTxlsx"/>-->
 <!--            <class name="testCases.TC_003AccountRegistrationTestDDTDB"/>-->
 <!--            <class name="testCases.TC_004BooksPageTest"/>-->
-                <class name="testCases.TC_005TextBoxTest"/>
+<!--                <class name="testCases.TC_005TextBoxTest"/>-->
+                <class name="testCases.TC_006CheckBoxPageTest"/>
+
+
         </classes>
     </test>
 
