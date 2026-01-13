@@ -1,145 +1,33 @@
-2026-01-08 08:39:05.750 [main] INFO  testCases.TC_005TextBoxTest - Starting test...
-2026-01-08 08:39:23.374 [main] INFO  testCases.TC_005TextBoxTest - Navigated to: https://demoqa.com/
-2026-01-08 08:39:23.436 [main] INFO  testCases.TC_005TextBoxTest - ===== Starting TextBox Test =====
-2026-01-08 08:39:23.611 [main] INFO  testCases.TC_005TextBoxTest - ===== Home Page =====
-2026-01-08 08:39:23.809 [main] INFO  testCases.TC_005TextBoxTest - ===== Starting ElementsMenuComponent Page =====
-2026-01-08 08:39:25.212 [main] INFO  testCases.TC_005TextBoxTest - ===== Completing TextBox Test =====
-2026-01-08 08:39:27.407 [main] INFO  testCases.TC_005TextBoxTest - Browser closed successfully.
-2026-01-08 08:39:27.729 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-08 08:39:27.729 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-08 08:39:27.729 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-08 08:39:32.275 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-08 08:55:06.039 [main] INFO  testCases.TC_005TextBoxTest - Starting test...
-2026-01-08 08:55:13.884 [main] INFO  testCases.TC_005TextBoxTest - Navigated to: https://demoqa.com/
-2026-01-08 08:55:13.925 [main] INFO  testCases.TC_005TextBoxTest - ===== Starting TextBox Test =====
-2026-01-08 08:55:14.066 [main] INFO  testCases.TC_005TextBoxTest - ===== Home Page =====
-2026-01-08 08:55:14.212 [main] INFO  testCases.TC_005TextBoxTest - ===== Starting ElementsMenuComponent Page =====
-2026-01-08 08:55:15.286 [main] INFO  testCases.TC_005TextBoxTest - ===== Completing TextBox Test =====
-2026-01-08 08:55:15.621 [main] INFO  testCases.TC_005TextBoxTest - Browser closed successfully.
-2026-01-08 08:55:16.062 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-08 08:55:16.062 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-08 08:55:16.062 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-08 08:55:19.867 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-08 21:50:16.406 [main] INFO  testCases.TC_006CheckBoxPageTest - Starting test...
-2026-01-08 21:50:54.625 [main] INFO  testCases.TC_006CheckBoxPageTest - Navigated to: https://demoqa.com/
-2026-01-08 21:50:54.663 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting CheckBoxPage Test =====
-2026-01-08 21:50:54.813 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Home Page =====
-2026-01-08 21:50:54.959 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting ElementsMenuComponent Page =====
-2026-01-08 21:50:56.375 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/checkBoxTest_20260108215056.png
-2026-01-08 21:50:56.618 [main] INFO  testCases.TC_006CheckBoxPageTest - Browser closed successfully.
-2026-01-08 21:50:57.099 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-08 21:50:57.100 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-08 21:50:57.100 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-08 21:51:01.609 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-08 21:59:50.452 [main] INFO  testCases.TC_006CheckBoxPageTest - Starting test...
-2026-01-08 22:00:13.403 [main] INFO  testCases.TC_006CheckBoxPageTest - Navigated to: https://demoqa.com/
-2026-01-08 22:00:13.432 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting CheckBoxPage Test =====
-2026-01-08 22:00:13.558 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Home Page =====
-2026-01-08 22:00:13.688 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting ElementsMenuComponent Page =====
-2026-01-08 22:00:15.227 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/checkBoxTest_20260108220015.png
-2026-01-08 22:00:15.509 [main] INFO  testCases.TC_006CheckBoxPageTest - Browser closed successfully.
-2026-01-08 22:00:15.854 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-08 22:00:15.854 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-08 22:00:15.854 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-08 22:00:20.428 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-08 22:08:51.546 [main] INFO  testCases.TC_006CheckBoxPageTest - Starting test...
-2026-01-08 22:09:01.270 [main] INFO  testCases.TC_006CheckBoxPageTest - Navigated to: https://demoqa.com/
-2026-01-08 22:09:01.312 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting CheckBoxPage Test =====
-2026-01-08 22:09:01.446 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Home Page =====
-2026-01-08 22:09:01.614 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting ElementsMenuComponent Page =====
-2026-01-08 22:09:03.144 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/checkBoxTest_20260108220903.png
-2026-01-08 22:09:03.403 [main] INFO  testCases.TC_006CheckBoxPageTest - Browser closed successfully.
-2026-01-08 22:09:03.747 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-08 22:09:03.747 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-08 22:09:03.747 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-08 22:09:08.459 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-08 22:10:39.288 [main] INFO  testCases.TC_006CheckBoxPageTest - Starting test...
-2026-01-08 22:11:09.274 [main] INFO  testCases.TC_006CheckBoxPageTest - Navigated to: https://demoqa.com/
-2026-01-08 22:11:09.308 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting CheckBoxPage Test =====
-2026-01-08 22:11:09.429 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Home Page =====
-2026-01-08 22:11:09.573 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting ElementsMenuComponent Page =====
-2026-01-08 22:11:10.222 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/checkBoxTest_20260108221110.png
-2026-01-08 22:11:12.133 [main] INFO  testCases.TC_006CheckBoxPageTest - Browser closed successfully.
-2026-01-08 22:11:12.472 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-08 22:11:12.472 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-08 22:11:12.472 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-08 22:11:22.750 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-08 22:17:54.364 [main] INFO  testCases.TC_006CheckBoxPageTest - Starting test...
-2026-01-08 22:18:23.672 [main] INFO  testCases.TC_006CheckBoxPageTest - Navigated to: https://demoqa.com/
-2026-01-08 22:18:23.715 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting CheckBoxPage Test =====
-2026-01-08 22:18:23.862 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Home Page =====
-2026-01-08 22:18:23.988 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting ElementsMenuComponent Page =====
-2026-01-08 22:18:34.909 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/checkBoxTest_20260108221834.png
-2026-01-08 22:18:35.162 [main] INFO  testCases.TC_006CheckBoxPageTest - Browser closed successfully.
-2026-01-08 22:18:35.499 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-08 22:18:35.499 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-08 22:18:35.499 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-08 22:18:39.547 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-08 22:30:54.867 [main] INFO  testCases.TC_006CheckBoxPageTest - Starting test...
-2026-01-08 22:31:27.722 [main] INFO  testCases.TC_006CheckBoxPageTest - Navigated to: https://demoqa.com/
-2026-01-08 22:31:27.781 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting CheckBoxPage Test =====
-2026-01-08 22:31:27.931 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Home Page =====
-2026-01-08 22:31:28.082 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting ElementsMenuComponent Page =====
-2026-01-08 22:31:38.635 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/checkBoxTest_20260108223138.png
-2026-01-08 22:31:38.938 [main] INFO  testCases.TC_006CheckBoxPageTest - Browser closed successfully.
-2026-01-08 22:31:39.275 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-08 22:31:39.275 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-08 22:31:39.275 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-08 22:31:43.777 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-08 22:33:54.975 [main] INFO  testCases.TC_006CheckBoxPageTest - Starting test...
-2026-01-08 22:34:07.824 [main] INFO  testCases.TC_006CheckBoxPageTest - Navigated to: https://demoqa.com/
-2026-01-08 22:34:07.857 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting CheckBoxPage Test =====
-2026-01-08 22:34:08.000 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Home Page =====
-2026-01-08 22:34:08.107 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting ElementsMenuComponent Page =====
-2026-01-08 22:34:19.776 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/checkBoxTest_20260108223419.png
-2026-01-08 22:34:19.998 [main] INFO  testCases.TC_006CheckBoxPageTest - Browser closed successfully.
-2026-01-08 22:34:20.401 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-08 22:34:20.401 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-08 22:34:20.401 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-08 22:34:24.469 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-08 22:38:01.685 [main] INFO  testCases.TC_006CheckBoxPageTest - Starting test...
-2026-01-08 22:38:27.322 [main] INFO  testCases.TC_006CheckBoxPageTest - Navigated to: https://demoqa.com/
-2026-01-08 22:38:27.370 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting CheckBoxPage Test =====
-2026-01-08 22:38:27.507 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Home Page =====
-2026-01-08 22:38:27.663 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting ElementsMenuComponent Page =====
-2026-01-08 22:38:39.307 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/checkBoxTest_20260108223839.png
-2026-01-08 22:38:39.566 [main] INFO  testCases.TC_006CheckBoxPageTest - Browser closed successfully.
-2026-01-08 22:38:39.902 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-08 22:38:39.902 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-08 22:38:39.902 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-08 22:38:43.801 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-08 22:53:39.217 [main] INFO  testCases.TC_006CheckBoxPageTest - Starting test...
-2026-01-08 22:54:15.318 [main] INFO  testCases.TC_006CheckBoxPageTest - Navigated to: https://demoqa.com/
-2026-01-08 22:54:15.359 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting CheckBoxPage Test =====
-2026-01-08 22:54:15.504 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Home Page =====
-2026-01-08 22:54:15.645 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting ElementsMenuComponent Page =====
-2026-01-08 22:54:16.373 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/checkBoxTest_20260108225416.png
-2026-01-08 22:54:16.594 [main] INFO  testCases.TC_006CheckBoxPageTest - Browser closed successfully.
-2026-01-08 22:54:17.007 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-08 22:54:17.007 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-08 22:54:17.007 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-08 22:54:20.879 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-08 22:56:05.314 [main] INFO  testCases.TC_006CheckBoxPageTest - Starting test...
-2026-01-08 22:56:17.796 [main] INFO  testCases.TC_006CheckBoxPageTest - Navigated to: https://demoqa.com/
-2026-01-08 22:56:17.822 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting CheckBoxPage Test =====
-2026-01-08 22:56:17.973 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Home Page =====
-2026-01-08 22:56:18.106 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting ElementsMenuComponent Page =====
-2026-01-08 22:56:18.632 [main] INFO  testCases.TC_006CheckBoxPageTest - Selected items: [notes, downloads, wordFile, excelFile]
-2026-01-08 22:56:18.632 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Completing CheckBoxPage Test =====
-2026-01-08 22:56:18.895 [main] INFO  testCases.TC_006CheckBoxPageTest - Browser closed successfully.
-2026-01-08 22:56:19.213 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-08 22:56:19.214 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-08 22:56:19.214 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-08 22:56:23.031 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-08 23:02:19.954 [main] INFO  testCases.TC_006CheckBoxPageTest - Starting test...
-2026-01-08 23:02:47.846 [main] INFO  testCases.TC_006CheckBoxPageTest - Navigated to: https://demoqa.com/
-2026-01-08 23:02:47.883 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting CheckBoxPage Test =====
-2026-01-08 23:02:48.025 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Home Page =====
-2026-01-08 23:02:48.158 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Starting ElementsMenuComponent Page =====
-2026-01-08 23:02:48.685 [main] INFO  testCases.TC_006CheckBoxPageTest - Selected items validated: [notes, downloads, wordFile, excelFile]
-2026-01-08 23:02:48.685 [main] INFO  testCases.TC_006CheckBoxPageTest - ===== Completing CheckBoxPage Test =====
-2026-01-08 23:02:48.932 [main] INFO  testCases.TC_006CheckBoxPageTest - Browser closed successfully.
-2026-01-08 23:02:49.593 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-08 23:02:49.593 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-08 23:02:49.595 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-08 23:02:53.817 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-01-13 20:21:28.027 [main] INFO  testCases.TC_007RadioBtnsPageTest - Starting test...
+2026-01-13 20:23:07.825 [main] INFO  testCases.TC_007RadioBtnsPageTest - Navigated to: https://demoqa.com/
+2026-01-13 20:23:07.868 [main] INFO  testCases.TC_007RadioBtnsPageTest - ===== Starting Radio Button Test =====
+2026-01-13 20:23:08.399 [main] INFO  testCases.TC_007RadioBtnsPageTest - Yes radio button validated successfully
+2026-01-13 20:23:08.621 [main] INFO  testCases.TC_007RadioBtnsPageTest - Impressive radio button validated successfully
+2026-01-13 20:23:08.665 [main] INFO  testCases.TC_007RadioBtnsPageTest - No radio button is disabled as expected
+2026-01-13 20:23:08.950 [main] INFO  testCases.TC_007RadioBtnsPageTest - Browser closed successfully.
+2026-01-13 20:23:09.657 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-01-13 20:23:09.659 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-01-13 20:23:09.659 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-01-13 20:23:13.747 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-01-13 20:35:54.080 [main] INFO  testCases.TC_008WebTablesTest - Starting test...
+2026-01-13 20:36:28.876 [main] INFO  testCases.TC_008WebTablesTest - Navigated to: https://demoqa.com/
+2026-01-13 20:36:28.933 [main] INFO  testCases.TC_008WebTablesTest - ===== Starting Web Tables Test =====
+2026-01-13 20:36:31.214 [main] INFO  testCases.TC_008WebTablesTest - Employee added successfully
+2026-01-13 20:36:32.676 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/webTablesTest_20260113203632.png
+2026-01-13 20:36:32.936 [main] INFO  testCases.TC_008WebTablesTest - Browser closed successfully.
+2026-01-13 20:36:33.336 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-01-13 20:36:33.336 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-01-13 20:36:33.336 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-01-13 20:36:37.370 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-01-13 20:41:16.553 [main] INFO  testCases.TC_008WebTablesTest - Starting test...
+2026-01-13 20:41:45.527 [main] INFO  testCases.TC_008WebTablesTest - Navigated to: https://demoqa.com/
+2026-01-13 20:41:45.557 [main] INFO  testCases.TC_008WebTablesTest - ===== Starting Web Tables Test =====
+2026-01-13 20:41:48.304 [main] INFO  testCases.TC_008WebTablesTest - Employee added successfully
+2026-01-13 20:41:49.816 [main] INFO  testCases.TC_008WebTablesTest - Employee edited successfully
+2026-01-13 20:41:50.760 [main] INFO  testCases.TC_008WebTablesTest - Employee deleted successfully
+2026-01-13 20:41:50.760 [main] INFO  testCases.TC_008WebTablesTest - ===== Web Tables Test Completed Successfully =====
+2026-01-13 20:41:51.013 [main] INFO  testCases.TC_008WebTablesTest - Browser closed successfully.
+2026-01-13 20:41:51.425 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-01-13 20:41:51.427 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-01-13 20:41:51.427 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-01-13 20:42:00.024 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com

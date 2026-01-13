@@ -4,36 +4,58 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class RadioButtonPage extends BasePage{
+public class RadioButtonPage extends BasePage {
 
-    public RadioButtonPage(WebDriver driver){
+    public RadioButtonPage(WebDriver driver) {
         super(driver);
     }
 
-    //   ************************ LOCATORS ************************
+    // ************************ LOCATORS ************************
 
+    // Radio inputs
+    @FindBy(id = "yesRadio")
+    WebElement yesRadioInput;
+
+    @FindBy(id = "impressiveRadio")
+    WebElement impressiveRadioInput;
+
+    @FindBy(id = "noRadio")
+    WebElement noRadioInput;
+
+    // Labels (for clicking)
     @FindBy(xpath = "//label[normalize-space()='Yes']")
     WebElement radioYes;
 
     @FindBy(xpath = "//label[normalize-space()='Impressive']")
     WebElement radioImpressive;
 
-    @FindBy(xpath = "//label[normalize-space()='No']")
-    WebElement radioNo;
+    // Result text
+    @FindBy(className = "text-success")
+    WebElement selectedText;
 
+    // ************************ ACTION METHODS ************************
 
-    //   ************************ ACTION METHODS ************************
-
-    public void clickradioYes(){
+    public void clickYes() {
         radioYes.click();
     }
 
-    public void clickradioImpressive(){
+    public void clickImpressive() {
         radioImpressive.click();
     }
 
-    public void clickradioNo(){
-        radioNo.click();
+    public boolean isYesSelected() {
+        return yesRadioInput.isSelected();
     }
 
+    public boolean isImpressiveSelected() {
+        return impressiveRadioInput.isSelected();
+    }
+
+    public boolean isNoEnabled() {
+        return noRadioInput.isEnabled();
+    }
+
+    public String getSelectedResultText() {
+        return selectedText.getText();
+    }
 }
