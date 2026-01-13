@@ -56,8 +56,9 @@ public class CheckBoxPage extends BasePage {
     public List<String> getSelectedItems() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> items = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(selectedItems));
-        return items.stream()
-                .map(WebElement::getText)
-                .collect(Collectors.toList());
+        return items.stream()// Converts the list into a stream for functional processing.
+                .map(WebElement::getText) // For each WebElement, calls getText() //
+                                          // Converts List<WebElement> → List<String>
+                .collect(Collectors.toList()); // Collects the results into a List<String>
     }
 }
