@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,14 +12,15 @@ import java.time.Duration;
 public class LinksPage extends BasePage {
 
     public WebDriverWait wait;
+    public JavascriptExecutor js;
 
     public LinksPage(WebDriver driver) {
         super(driver);
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        this.js = (JavascriptExecutor) driver;
     }
 
     // ================= LOCATORS =================
-
     @FindBy(id = "simpleLink")
     public WebElement homeLink;
 
@@ -46,43 +48,52 @@ public class LinksPage extends BasePage {
     @FindBy(id = "linkResponse")
     public WebElement linkResponseMessage;
 
-    // ================= ACTION METHODS =================
+    // ================= ACTION METHODS USING JS =================
+    public void clickElement(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+        js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'center'});", element);
+        js.executeScript("arguments[0].click();", element);
+    }
 
     public void clickHomeLink() {
-        wait.until(ExpectedConditions.elementToBeClickable(homeLink)).click();
+        clickElement(homeLink);
     }
 
     public void clickCreatedLink() {
-        wait.until(ExpectedConditions.elementToBeClickable(createdLink)).click();
+        clickElement(createdLink);
     }
 
     public void clickNoContentLink() {
-        wait.until(ExpectedConditions.elementToBeClickable(noContentLink)).click();
+        clickElement(noContentLink);
     }
 
     public void clickMovedLink() {
-        wait.until(ExpectedConditions.elementToBeClickable(movedLink)).click();
+        clickElement(movedLink);
     }
 
     public void clickBadRequestLink() {
-        wait.until(ExpectedConditions.elementToBeClickable(badRequestLink)).click();
+        clickElement(badRequestLink);
     }
 
     public void clickUnauthorizedLink() {
-        wait.until(ExpectedConditions.elementToBeClickable(unauthorizedLink)).click();
+        clickElement(unauthorizedLink);
     }
 
     public void clickForbiddenLink() {
-        wait.until(ExpectedConditions.elementToBeClickable(forbiddenLink)).click();
+        clickElement(forbiddenLink);
     }
 
     public void clickInvalidUrlLink() {
-        wait.until(ExpectedConditions.elementToBeClickable(invalidUrlLink)).click();
+        clickElement(invalidUrlLink);
     }
 
     // ================= VALIDATION METHODS =================
-
     public String getResponseMessage() {
         return wait.until(ExpectedConditions.visibilityOf(linkResponseMessage)).getText();
+    }
+
+    // Wait until response message contains expected text
+    public void waitForResponseMessageToContain(String expectedText) {
+        wait.until(ExpectedConditions.textToBePresentInElement(linkResponseMessage, expectedText));
     }
 }

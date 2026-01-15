@@ -15,8 +15,8 @@
 <!--        <class name="testCases.TC_006CheckBoxPageTest"/>-->
 <!--        <class name="testCases.TC_007RadioBtnsPageTest"/>-->
 <!--        <class name="testCases.TC_008WebTablesTest"/>-->
-            <class name="testCases.TC_009ButtonsTest"/>
-
+<!--        <class name="testCases.TC_009ButtonsTest"/>-->
+            <class name="testCases.TC_010LinksTest"/>
         </classes>
     </test>
 
