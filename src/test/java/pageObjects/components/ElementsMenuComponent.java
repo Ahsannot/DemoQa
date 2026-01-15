@@ -1,82 +1,99 @@
 package pageObjects.components;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObjects.BasePage;
 
+import java.time.Duration;
+
 public class ElementsMenuComponent extends BasePage {
-    // Constructor: initializes the page with WebDriver instance
+
+    public JavascriptExecutor js;
+    public WebDriverWait wait;  // Explicit wait instance
+
     public ElementsMenuComponent(WebDriver driver){
         super(driver);
+        // Initialize WebDriverWait for 10 seconds
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.js = (JavascriptExecutor) driver;
     }
 
     // ************************ LOCATORS ************************
 
     @FindBy(xpath = "//span[normalize-space()='Text Box']")
-    WebElement linkTextBox;
+    public WebElement linkTextBox;
 
     @FindBy(xpath = "//span[normalize-space()='Check Box']")
-    WebElement linkCheckBox;
+    public WebElement linkCheckBox;
 
     @FindBy(xpath = "//span[normalize-space()='Radio Button']")
-    WebElement linkRadioButton;
+    public WebElement linkRadioButton;
 
     @FindBy(xpath = "//span[normalize-space()='Web Tables']")
-    WebElement linkWebTables;
+    public WebElement linkWebTables;
 
     @FindBy(xpath = "//span[normalize-space()='Buttons']")
-    WebElement linkButtons;
+    public WebElement linkButtons;
 
     @FindBy(xpath = "//span[normalize-space()='Links']")
-    WebElement linkLinks;
+    public WebElement linkLinks;
 
     @FindBy(xpath = "//span[normalize-space()='Broken Links - Images']")
-    WebElement linkBrokenLinksImages;
+    public WebElement linkBrokenLinksImages;
 
     @FindBy(xpath = "//span[normalize-space()='Upload and Download']")
-    WebElement linkUploadandDownload;
+    public WebElement linkUploadandDownload;
 
     @FindBy(xpath = "//span[normalize-space()='Dynamic Properties']")
-    WebElement linkDynamicProperties;
+    public WebElement linkDynamicProperties;
+
+    // ************************ HELPER METHOD ************************
+
+    public void clickElement(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+        js.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'center'});", element);
+        js.executeScript("arguments[0].click();", element);
+    }
 
     // ************************ ACTION METHODS ************************
 
     public void openTextBox() {
-        linkTextBox.click();
+        clickElement(linkTextBox);
     }
 
     public void openCheckBox() {
-        linkCheckBox.click();
+        clickElement(linkCheckBox);
     }
 
     public void openRadioButton() {
-        linkRadioButton.click();
+        clickElement(linkRadioButton);
     }
 
     public void openWebTables() {
-        linkWebTables.click();
+        clickElement(linkWebTables);
     }
 
     public void openButtons() {
-        linkButtons.click();
+        clickElement(linkButtons);
     }
 
     public void openLinks() {
-        linkLinks.click();
+        clickElement(linkLinks);
     }
 
     public void openBrokenLinksImages() {
-        linkBrokenLinksImages.click();
+        clickElement(linkBrokenLinksImages);
     }
 
     public void openUploadAndDownload() {
-        linkUploadandDownload.click();
+        clickElement(linkUploadandDownload);
     }
 
     public void openDynamicProperties() {
-        linkDynamicProperties.click();
+        clickElement(linkDynamicProperties);
     }
-
-
 }
