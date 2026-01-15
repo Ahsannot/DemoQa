@@ -18,7 +18,7 @@ public class WebTablesPage extends BasePage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    // ------------------- LOCATORS -------------------
+    // =================== LOCATORS ===================
 
     @FindBy(id = "addNewRecordButton")
     WebElement addButton;
@@ -50,12 +50,14 @@ public class WebTablesPage extends BasePage {
     @FindBy(id = "searchBox")
     WebElement searchBox;
 
-    // ------------------- ACTION METHODS -------------------
+    // =================== ACTION METHODS ===================
 
+    // Click on "Add" button
     public void clickAddNewRecord() {
         wait.until(ExpectedConditions.elementToBeClickable(addButton)).click();
     }
 
+    // Add a new employee
     public void addEmployee(String fName, String lName, String mail,
                             String empAge, String empSalary, String dept) {
 
@@ -68,72 +70,92 @@ public class WebTablesPage extends BasePage {
         submit.click();
     }
 
+    // Search employee in table
     public void search(String keyword) {
         wait.until(ExpectedConditions.visibilityOf(searchBox)).clear();
         searchBox.sendKeys(keyword);
     }
 
-    // ------------------- DYNAMIC ROW HANDLING -------------------
+    // =================== DYNAMIC ROW HANDLING ===================
 
-    private WebElement getRowByText(String text) {
-        wait.until(ExpectedConditions.visibilityOfAllElements(tableRows));
-        return tableRows.stream()
-                .filter(row -> row.getText().contains(text))
-                .findFirst()
-                .orElse(null);
+    // Find a table row that contains given text
+    public WebElement getRowByText(String text) {
+        for (WebElement row : tableRows) {
+            if (row.getText().contains(text)) {
+                return row;
+            }
+        }
+        return null;
     }
 
+    // Check if employee exists in table
     public boolean isEmployeePresent(String text) {
         return getRowByText(text) != null;
     }
 
+    // =================== EDIT EMPLOYEE ===================
+
     public void editEmployee(String text, String newAge) {
 
+        // Step 1: Find employee row
         WebElement row = getRowByText(text);
         Assert.assertNotNull(row, "Employee row not found for editing");
 
+        // Step 2: Find Edit button
         WebElement editBtn = row.findElement(By.cssSelector("span[title='Edit']"));
 
-        // Scroll element into view
-        ((JavascriptExecutor) driver).executeScript(
-                "arguments[0].scrollIntoView(true);", editBtn);
+        // Step 3: Create JavaScript executor
+        JavascriptExecutor js = (JavascriptExecutor) driver;
 
-        // Wait until clickable
+        // Step 4: Scroll into view
+        js.executeScript("arguments[0].scrollIntoView(true);", editBtn);
+
+        // Step 5: Wait until clickable
         wait.until(ExpectedConditions.elementToBeClickable(editBtn));
 
+        // Step 6: Click Edit button
         try {
             editBtn.click();
         } catch (ElementClickInterceptedException e) {
-            // Fallback to JS click if ad blocks it
-            ((JavascriptExecutor) driver).executeScript(
-                    "arguments[0].click();", editBtn);
+            // Use JS click if blocked by ads
+            js.executeScript("arguments[0].click();", editBtn);
         }
 
-        // Update age
-        wait.until(ExpectedConditions.visibilityOf(age)).clear();
+        // Step 7: Update age
+        wait.until(ExpectedConditions.visibilityOf(age));
+        age.clear();
         age.sendKeys(newAge);
+
+        // Step 8: Submit changes
         submit.click();
     }
 
+    // =================== DELETE EMPLOYEE ===================
 
     public void deleteEmployee(String text) {
 
+        // Step 1: Find employee row
         WebElement row = getRowByText(text);
         Assert.assertNotNull(row, "Employee row not found for deletion");
 
+        // Step 2: Find Delete button
         WebElement deleteBtn = row.findElement(By.cssSelector("span[title='Delete']"));
 
-        ((JavascriptExecutor) driver).executeScript(
-                "arguments[0].scrollIntoView(true);", deleteBtn);
+        // Step 3: Create JavaScript executor
+        JavascriptExecutor js = (JavascriptExecutor) driver;
 
+        // Step 4: Scroll into view
+        js.executeScript("arguments[0].scrollIntoView(true);", deleteBtn);
+
+        // Step 5: Wait until clickable
         wait.until(ExpectedConditions.elementToBeClickable(deleteBtn));
 
+        // Step 6: Click Delete button
         try {
             deleteBtn.click();
         } catch (ElementClickInterceptedException e) {
-            ((JavascriptExecutor) driver).executeScript(
-                    "arguments[0].click();", deleteBtn);
+            // Use JS click if blocked by ads
+            js.executeScript("arguments[0].click();", deleteBtn);
         }
     }
-
 }
