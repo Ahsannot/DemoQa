@@ -10,55 +10,48 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ButtonsPage extends BasePage {
 
-    WebDriverWait wait;
+    public WebDriverWait wait;
+    public Actions actions;
 
     public ButtonsPage(WebDriver driver) {
         super(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        actions = new Actions(driver);
     }
 
     // =================== LOCATORS ===================
 
     @FindBy(id = "doubleClickBtn")
-    WebElement doubleClickBtn;
+    public WebElement doubleClickBtn;
 
     @FindBy(id = "rightClickBtn")
-    WebElement rightClickBtn;
+    public WebElement rightClickBtn;
 
     @FindBy(xpath = "//button[text()='Click Me']")
-    WebElement clickMeBtn;
+    public WebElement clickMeBtn;
 
     @FindBy(id = "doubleClickMessage")
-    WebElement doubleClickMsg;
+    public WebElement doubleClickMsg;
 
     @FindBy(id = "rightClickMessage")
-    WebElement rightClickMsg;
+    public WebElement rightClickMsg;
 
     @FindBy(id = "dynamicClickMessage")
-    WebElement clickMsg;
+    public WebElement dynamicClickMsg;
 
     // =================== ACTION METHODS ===================
 
-    // Double click action
     public void doubleClickButton() {
-
-        wait.until(ExpectedConditions.visibilityOf(doubleClickBtn));
-
-        Actions actions = new Actions(driver);
+        wait.until(ExpectedConditions.elementToBeClickable(doubleClickBtn));
         actions.doubleClick(doubleClickBtn).perform();
     }
 
-
-    // Right click action
     public void rightClickButton() {
-        wait.until(ExpectedConditions.visibilityOf(rightClickBtn));
-
-        Actions actions = new Actions(driver);
+        wait.until(ExpectedConditions.elementToBeClickable(rightClickBtn));
         actions.contextClick(rightClickBtn).perform();
     }
 
-    // Normal click action
-    public void clickButton() {
+    public void clickDynamicButton() {
         wait.until(ExpectedConditions.elementToBeClickable(clickMeBtn)).click();
     }
 
@@ -72,7 +65,7 @@ public class ButtonsPage extends BasePage {
         return wait.until(ExpectedConditions.visibilityOf(rightClickMsg)).getText();
     }
 
-    public String getClickMessage() {
-        return wait.until(ExpectedConditions.visibilityOf(clickMsg)).getText();
+    public String getDynamicClickMessage() {
+        return wait.until(ExpectedConditions.visibilityOf(dynamicClickMsg)).getText();
     }
 }
