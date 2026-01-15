@@ -31,3 +31,12 @@
 2026-01-13 20:41:51.427 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
 2026-01-13 20:41:51.427 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
 2026-01-13 20:42:00.024 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-01-13 22:42:17.701 [main] INFO  testCases.TC_009ButtonsTest - Starting test...
+2026-01-13 22:44:50.568 [main] INFO  testCases.TC_009ButtonsTest - Navigated to: https://demoqa.com/
+2026-01-13 22:44:50.622 [main] INFO  testCases.TC_009ButtonsTest - ===== Starting Buttons Page Test =====
+2026-01-13 22:44:52.019 [main] INFO  testCases.TC_009ButtonsTest - ===== Buttons Page Test Completed Successfully =====
+2026-01-13 22:44:52.371 [main] INFO  testCases.TC_009ButtonsTest - Browser closed successfully.
+2026-01-13 22:44:52.965 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-01-13 22:44:52.965 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-01-13 22:44:52.965 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-01-13 22:44:57.915 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
