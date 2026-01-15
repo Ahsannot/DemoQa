@@ -53,11 +53,11 @@ public class TC_009ButtonsTest extends BaseClass {
 
         // -------- NORMAL CLICK --------
         logger.info("Performing normal click action");
-        buttonsPage.clickButton();
+        buttonsPage.clickDynamicButton();
 
         logger.info("Validating normal click success message");
         Assert.assertEquals(
-                buttonsPage.getClickMessage(),
+                buttonsPage.getDynamicClickMessage(),
                 "You have done a dynamic click",
                 "Click message not displayed correctly"
         );
