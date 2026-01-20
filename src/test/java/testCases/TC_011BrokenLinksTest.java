@@ -29,7 +29,7 @@ public class TC_011BrokenLinksTest extends BaseClass {
 
         ElementsMenuComponent menu = new ElementsMenuComponent(driver);
         try {
-            menu.clickElement(menu.linkBrokenLinksImages); // JS + wait click helper
+            menu.openBrokenLinksImages();
             logger.info("Opened Broken Links page");
         } catch (Exception e) {
             logger.error("Failed to open Broken Links page: " + e.getMessage());
