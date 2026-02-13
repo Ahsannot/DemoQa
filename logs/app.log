@@ -286,3 +286,37 @@
 2026-02-13 23:30:39.919 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
 2026-02-13 23:30:39.919 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
 2026-02-13 23:30:43.864 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-02-13 23:48:48.086 [main] INFO  testCases.TC_013DynamicPropertiesTest - Starting test...
+2026-02-13 23:49:19.430 [main] INFO  testCases.TC_013DynamicPropertiesTest - Navigated to: https://demoqa.com/
+2026-02-13 23:49:19.482 [main] INFO  testCases.TC_013DynamicPropertiesTest - ===== Starting Dynamic Properties Test =====
+2026-02-13 23:49:19.622 [main] INFO  testCases.TC_013DynamicPropertiesTest - Clicked Elements link
+2026-02-13 23:49:25.007 [main] INFO  pageObjects.DynamicPropertiesPage - Button is enabled after 5 Sec
+2026-02-13 23:49:25.082 [main] INFO  pageObjects.DynamicPropertiesPage - Clicked Enabled button
+2026-02-13 23:49:25.082 [main] INFO  testCases.TC_013DynamicPropertiesTest - Enabled button test passed
+2026-02-13 23:49:25.131 [main] INFO  pageObjects.DynamicPropertiesPage - Button is visible after 5 Sec
+2026-02-13 23:49:25.161 [main] INFO  testCases.TC_013DynamicPropertiesTest - Visible button test passed
+2026-02-13 23:49:25.161 [main] INFO  pageObjects.DynamicPropertiesPage - Waiting for Color Change button to change to 'text-danger'
+2026-02-13 23:49:25.192 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change button is now 'text-danger'
+2026-02-13 23:49:25.217 [main] INFO  testCases.TC_013DynamicPropertiesTest - Button text color change test passed
+2026-02-13 23:49:25.447 [main] INFO  testCases.TC_013DynamicPropertiesTest - Browser closed successfully.
+2026-02-13 23:49:25.750 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-02-13 23:49:25.750 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-02-13 23:49:25.750 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-02-13 23:49:30.490 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-02-13 23:53:40.264 [main] INFO  testCases.TC_013DynamicPropertiesTest - Starting test...
+2026-02-13 23:53:54.383 [main] INFO  testCases.TC_013DynamicPropertiesTest - Navigated to: https://demoqa.com/
+2026-02-13 23:53:54.413 [main] INFO  testCases.TC_013DynamicPropertiesTest - ===== Starting Dynamic Properties Test =====
+2026-02-13 23:53:54.556 [main] INFO  testCases.TC_013DynamicPropertiesTest - Clicked Elements link
+2026-02-13 23:53:59.931 [main] INFO  pageObjects.DynamicPropertiesPage - Button is enabled after 5 Sec
+2026-02-13 23:54:00.036 [main] INFO  pageObjects.DynamicPropertiesPage - Clicked Enabled button
+2026-02-13 23:54:00.039 [main] INFO  testCases.TC_013DynamicPropertiesTest - Enabled button test passed
+2026-02-13 23:54:00.057 [main] INFO  pageObjects.DynamicPropertiesPage - Button is visible after 5 Sec
+2026-02-13 23:54:00.089 [main] INFO  testCases.TC_013DynamicPropertiesTest - 'Visible button' test passed
+2026-02-13 23:54:00.089 [main] INFO  pageObjects.DynamicPropertiesPage - Waiting for button to change the color to 'Red'
+2026-02-13 23:54:00.112 [main] INFO  pageObjects.DynamicPropertiesPage - Button of the color is changed to 'Red' now 
+2026-02-13 23:54:00.128 [main] INFO  testCases.TC_013DynamicPropertiesTest - Button text color is changed, test passed
+2026-02-13 23:54:00.379 [main] INFO  testCases.TC_013DynamicPropertiesTest - Browser closed successfully.
+2026-02-13 23:54:00.669 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-02-13 23:54:00.669 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-02-13 23:54:00.669 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-02-13 23:54:04.532 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
