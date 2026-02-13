@@ -40,7 +40,7 @@ public class DynamicPropertiesPage extends BasePage {
 
     public void clickEnableAfterButton() {
         enableAfterButton.click();
-        logger.info("Clicked Enabled  button");
+        logger.info("Clicked Enabled button");
     }
 
     public void waitForVisibleAfterButton() {
@@ -52,9 +52,38 @@ public class DynamicPropertiesPage extends BasePage {
         return visibleAfterButton.isDisplayed();
     }
 
-    public String getColorChangeButtonClass() {
-        String className = colorChangeButton.getAttribute("class");
-        logger.info("Color Change, button class: " + className);
-        return className;
+    // ================= COLOR CHANGE METHODS =================
+
+    /**
+     * Wait until the colorChangeButton has changed from primary to danger
+     */
+    public void waitForColorChangeToDanger() {
+        logger.info("Waiting for Color Change button to change to 'text-danger'");
+        wait.until(driver -> colorChangeButton.getAttribute("class").contains("text-danger"));
+        logger.info("Color Change button is now 'text-danger'");
+    }
+
+    /**
+     * Get current button color (CSS 'color' value)
+     */
+    public String getColorChangeButtonColor() {
+        String color = colorChangeButton.getCssValue("color"); // text color
+        logger.info("Color Change button color: " + color);
+        return color;
+    }
+
+    /**
+     * Returns true if button currently has btn-primary but not yet text-danger
+     */
+    public boolean isButtonPrimary() {
+        String classes = colorChangeButton.getAttribute("class");
+        return classes.contains("btn-primary") && !classes.contains("text-danger");
+    }
+
+    /**
+     * Returns true if button currently has text-danger class
+     */
+    public boolean isButtonDanger() {
+        return colorChangeButton.getAttribute("class").contains("text-danger");
     }
 }

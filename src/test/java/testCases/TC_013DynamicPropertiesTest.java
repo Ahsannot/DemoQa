@@ -1,11 +1,15 @@
 package testCases;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.DynamicPropertiesPage;
 import pageObjects.HomePage;
 import pageObjects.components.ElementsMenuComponent;
 import testBase.BaseClass;
+
+import java.time.Duration;
 
 public class TC_013DynamicPropertiesTest extends BaseClass {
 
@@ -27,38 +31,31 @@ public class TC_013DynamicPropertiesTest extends BaseClass {
         // -------- ENABLE AFTER TEST --------
         dynamicPropertiesPage.waitForEnableAfterButton();
         dynamicPropertiesPage.clickEnableAfterButton();
-
         logger.info("Enabled button test passed");
 
         // -------- VISIBLE AFTER TEST --------
         dynamicPropertiesPage.waitForVisibleAfterButton();
-
         Assert.assertTrue(
                 dynamicPropertiesPage.isVisibleAfterButtonDisplayed(),
                 "Visible button is not displayed"
         );
-
         logger.info("Visible button test passed");
 
         // -------- COLOR CHANGE TEST --------
-        String classBefore = dynamicPropertiesPage.getColorChangeButtonClass();
 
-        try {
-            Thread.sleep(6000); // required for demoqa color change
-        } catch (Exception e) {
-            logger.error("Exception occurred while waiting for color change", e);
-            Assert.fail("Test failed due to exception: " + e.getMessage());
-        }
+        // Log initial state
+        System.out.println("Button initially primary? " + dynamicPropertiesPage.isButtonPrimary());
+        System.out.println("Initial color: " + dynamicPropertiesPage.getColorChangeButtonColor());
 
-        String classAfter = dynamicPropertiesPage.getColorChangeButtonClass();
+        // Wait for button to change color to danger (class-based)
+        dynamicPropertiesPage.waitForColorChangeToDanger();
 
-        Assert.assertNotEquals(
-                classBefore,
-                classAfter,
-                "Color Change ? button did not change color"
-        );
+        // Log final state
+        System.out.println("Button now danger? " + dynamicPropertiesPage.isButtonDanger());
+        System.out.println("Color after: " + dynamicPropertiesPage.getColorChangeButtonColor());
 
+        // Assert the change
+        Assert.assertTrue(dynamicPropertiesPage.isButtonDanger(), "Button did not change to danger");
         logger.info("Button text color change test passed");
-        logger.info("===== Dynamic Properties Test Completed Successfully =====");
     }
 }
