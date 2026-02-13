@@ -7,6 +7,8 @@ import pageObjects.UploadDownloadPage;
 import pageObjects.components.ElementsMenuComponent;
 import testBase.BaseClass;
 
+import java.io.File;
+
 public class TC_012UploadDownloadTest extends BaseClass {
 
     @Test
@@ -28,7 +30,8 @@ public class TC_012UploadDownloadTest extends BaseClass {
         // -------- DOWNLOAD TEST --------
         uploadDownloadPage.clickDownloadButton();
 
-        String downloadDir = System.getProperty("user.home") + "/Downloads";
+        String downloadDir = System.getProperty("user.dir")
+                + File.separator + "downloads";
         String downloadedFileName = "sampleFile.jpeg";
 
         boolean isDownloaded = uploadDownloadPage.waitForFileDownload(
@@ -42,7 +45,8 @@ public class TC_012UploadDownloadTest extends BaseClass {
 
         // -------- UPLOAD TEST --------
         String uploadFilePath = System.getProperty("user.dir")
-                + "testData/sampleUpload.txt";
+                + File.separator + "testData"
+                + File.separator + "sampleUpload.txt";
 
         uploadDownloadPage.uploadFile(uploadFilePath);
 

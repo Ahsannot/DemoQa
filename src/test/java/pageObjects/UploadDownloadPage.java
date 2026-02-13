@@ -47,30 +47,45 @@ public class UploadDownloadPage extends BasePage {
     }
 
     public String waitForUploadedFileText() {
-        String text = wait.until(ExpectedConditions
-                .visibilityOf(uploadedFilePathText)).getText();
+        String text = wait.until(
+                ExpectedConditions.visibilityOf(uploadedFilePathText)
+        ).getText();
         logger.info("Uploaded file path text displayed: " + text);
         return text;
     }
 
     // ================= FILE VALIDATION =================
 
-    public boolean waitForFileDownload(String downloadDir, String fileName, int timeoutSeconds) {
+    public boolean waitForFileDownload(String downloadDir,
+                                       String fileName,
+                                       int timeoutSeconds) {
 
         File dir = new File(downloadDir);
-        long endTime = System.currentTimeMillis() + (timeoutSeconds * 1000);
+        long endTime = System.currentTimeMillis() + (timeoutSeconds * 1000L);
+
+        logger.info("Waiting for file download in: " + dir.getAbsolutePath());
 
         while (System.currentTimeMillis() < endTime) {
+
             File[] files = dir.listFiles();
             if (files != null) {
                 for (File file : files) {
+                    logger.info("Found file: " + file.getName());
                     if (file.getName().equals(fileName)) {
                         logger.info("Downloaded file found: " + fileName);
                         return true;
                     }
                 }
             }
+
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                return false;
+            }
         }
+
         logger.warn("Downloaded file NOT found within timeout: " + fileName);
         return false;
     }

@@ -1,195 +1,28 @@
-2026-01-13 20:21:28.027 [main] INFO  testCases.TC_007RadioBtnsPageTest - Starting test...
-2026-01-13 20:23:07.825 [main] INFO  testCases.TC_007RadioBtnsPageTest - Navigated to: https://demoqa.com/
-2026-01-13 20:23:07.868 [main] INFO  testCases.TC_007RadioBtnsPageTest - ===== Starting Radio Button Test =====
-2026-01-13 20:23:08.399 [main] INFO  testCases.TC_007RadioBtnsPageTest - Yes radio button validated successfully
-2026-01-13 20:23:08.621 [main] INFO  testCases.TC_007RadioBtnsPageTest - Impressive radio button validated successfully
-2026-01-13 20:23:08.665 [main] INFO  testCases.TC_007RadioBtnsPageTest - No radio button is disabled as expected
-2026-01-13 20:23:08.950 [main] INFO  testCases.TC_007RadioBtnsPageTest - Browser closed successfully.
-2026-01-13 20:23:09.657 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-13 20:23:09.659 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-13 20:23:09.659 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-13 20:23:13.747 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-13 20:35:54.080 [main] INFO  testCases.TC_008WebTablesTest - Starting test...
-2026-01-13 20:36:28.876 [main] INFO  testCases.TC_008WebTablesTest - Navigated to: https://demoqa.com/
-2026-01-13 20:36:28.933 [main] INFO  testCases.TC_008WebTablesTest - ===== Starting Web Tables Test =====
-2026-01-13 20:36:31.214 [main] INFO  testCases.TC_008WebTablesTest - Employee added successfully
-2026-01-13 20:36:32.676 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/webTablesTest_20260113203632.png
-2026-01-13 20:36:32.936 [main] INFO  testCases.TC_008WebTablesTest - Browser closed successfully.
-2026-01-13 20:36:33.336 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-13 20:36:33.336 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-13 20:36:33.336 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-13 20:36:37.370 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-13 20:41:16.553 [main] INFO  testCases.TC_008WebTablesTest - Starting test...
-2026-01-13 20:41:45.527 [main] INFO  testCases.TC_008WebTablesTest - Navigated to: https://demoqa.com/
-2026-01-13 20:41:45.557 [main] INFO  testCases.TC_008WebTablesTest - ===== Starting Web Tables Test =====
-2026-01-13 20:41:48.304 [main] INFO  testCases.TC_008WebTablesTest - Employee added successfully
-2026-01-13 20:41:49.816 [main] INFO  testCases.TC_008WebTablesTest - Employee edited successfully
-2026-01-13 20:41:50.760 [main] INFO  testCases.TC_008WebTablesTest - Employee deleted successfully
-2026-01-13 20:41:50.760 [main] INFO  testCases.TC_008WebTablesTest - ===== Web Tables Test Completed Successfully =====
-2026-01-13 20:41:51.013 [main] INFO  testCases.TC_008WebTablesTest - Browser closed successfully.
-2026-01-13 20:41:51.425 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-13 20:41:51.427 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-13 20:41:51.427 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-13 20:42:00.024 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-13 22:42:17.701 [main] INFO  testCases.TC_009ButtonsTest - Starting test...
-2026-01-13 22:44:50.568 [main] INFO  testCases.TC_009ButtonsTest - Navigated to: https://demoqa.com/
-2026-01-13 22:44:50.622 [main] INFO  testCases.TC_009ButtonsTest - ===== Starting Buttons Page Test =====
-2026-01-13 22:44:52.019 [main] INFO  testCases.TC_009ButtonsTest - ===== Buttons Page Test Completed Successfully =====
-2026-01-13 22:44:52.371 [main] INFO  testCases.TC_009ButtonsTest - Browser closed successfully.
-2026-01-13 22:44:52.965 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-13 22:44:52.965 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-13 22:44:52.965 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-13 22:44:57.915 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-15 09:04:19.706 [main] INFO  testCases.TC_010LinksTest - Starting test...
-2026-01-15 09:04:30.485 [main] INFO  testCases.TC_010LinksTest - Navigated to: https://demoqa.com/
-2026-01-15 09:04:30.540 [main] INFO  testCases.TC_010LinksTest - ===== Starting Links Page Test =====
-2026-01-15 09:04:30.544 [main] INFO  testCases.TC_010LinksTest - Navigating to Home Page
-2026-01-15 09:04:30.698 [main] INFO  testCases.TC_010LinksTest - Clicked on Elements link
-2026-01-15 09:04:30.831 [main] INFO  testCases.TC_010LinksTest - Opened Links page from Elements menu
-2026-01-15 09:04:30.837 [main] INFO  testCases.TC_010LinksTest - Clicking Home link
-2026-01-15 09:04:32.316 [main] INFO  testCases.TC_010LinksTest - Home link validated successfully
-2026-01-15 09:04:32.316 [main] INFO  testCases.TC_010LinksTest - Clicking Created link
-2026-01-15 09:04:33.783 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/linksTest_20260115090433.png
-2026-01-15 09:04:33.998 [main] INFO  testCases.TC_010LinksTest - Browser closed successfully.
-2026-01-15 09:04:34.459 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-15 09:04:34.459 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-15 09:04:34.459 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-15 09:04:38.848 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-15 09:10:04.122 [main] INFO  testCases.TC_010LinksTest - Starting test...
-2026-01-15 09:10:33.915 [main] INFO  testCases.TC_010LinksTest - Navigated to: https://demoqa.com/
-2026-01-15 09:10:33.966 [main] INFO  testCases.TC_010LinksTest - ===== Starting Links Page Test =====
-2026-01-15 09:10:33.966 [main] INFO  testCases.TC_010LinksTest - Navigating to Home Page
-2026-01-15 09:10:34.123 [main] INFO  testCases.TC_010LinksTest - Clicked on Elements link
-2026-01-15 09:10:34.278 [main] INFO  testCases.TC_010LinksTest - Opened Links page from Elements menu
-2026-01-15 09:10:34.283 [main] INFO  testCases.TC_010LinksTest - Clicking Home link
-2026-01-15 09:10:35.622 [main] INFO  testCases.TC_010LinksTest - Home link validated successfully
-2026-01-15 09:10:35.622 [main] INFO  testCases.TC_010LinksTest - Clicking Created link
-2026-01-15 09:10:36.047 [main] INFO  testCases.TC_010LinksTest - Created link validated successfully
-2026-01-15 09:10:36.047 [main] INFO  testCases.TC_010LinksTest - Clicking No Content link
-2026-01-15 09:10:36.388 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/linksTest_20260115091036.png
-2026-01-15 09:10:36.586 [main] INFO  testCases.TC_010LinksTest - Browser closed successfully.
-2026-01-15 09:10:36.956 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-15 09:10:36.956 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-15 09:10:36.956 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-15 09:10:40.727 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-15 09:24:02.614 [main] INFO  testCases.TC_010LinksTest - Starting test...
-2026-01-15 09:24:31.607 [main] INFO  testCases.TC_010LinksTest - Navigated to: https://demoqa.com/
-2026-01-15 09:24:31.663 [main] INFO  testCases.TC_010LinksTest - ===== Starting Links Page Test =====
-2026-01-15 09:24:31.805 [main] INFO  testCases.TC_010LinksTest - Clicked on Elements link
-2026-01-15 09:24:31.927 [main] INFO  testCases.TC_010LinksTest - Opened Links page from Elements menu
-2026-01-15 09:24:31.931 [main] INFO  testCases.TC_010LinksTest - Clicking Home link
-2026-01-15 09:24:33.201 [main] INFO  testCases.TC_010LinksTest - Home link validated successfully
-2026-01-15 09:24:33.945 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/linksTest_20260115092433.png
-2026-01-15 09:24:34.187 [main] INFO  testCases.TC_010LinksTest - Browser closed successfully.
-2026-01-15 09:24:34.532 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-15 09:24:34.532 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-15 09:24:34.532 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-15 09:24:39.621 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-15 09:27:37.983 [main] INFO  testCases.TC_010LinksTest - Starting test...
-2026-01-15 09:28:07.381 [main] INFO  testCases.TC_010LinksTest - Navigated to: https://demoqa.com/
-2026-01-15 09:28:07.429 [main] INFO  testCases.TC_010LinksTest - ===== Starting Links Page Test =====
-2026-01-15 09:28:07.619 [main] INFO  testCases.TC_010LinksTest - Clicked on Elements link
-2026-01-15 09:28:09.141 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/linksTest_20260115092809.png
-2026-01-15 09:28:09.452 [main] INFO  testCases.TC_010LinksTest - Browser closed successfully.
-2026-01-15 09:28:10.179 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-15 09:28:10.180 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-15 09:28:10.180 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-15 09:28:14.403 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-15 09:36:03.354 [main] INFO  testCases.TC_010LinksTest - Starting test...
-2026-01-15 09:36:12.157 [main] INFO  testCases.TC_010LinksTest - Navigated to: https://demoqa.com/
-2026-01-15 09:36:12.212 [main] INFO  testCases.TC_010LinksTest - ===== Starting Links Page Test =====
-2026-01-15 09:36:12.383 [main] INFO  testCases.TC_010LinksTest - Clicked on Elements link
-2026-01-15 09:36:12.548 [main] INFO  testCases.TC_010LinksTest - Opened Links page from Elements menu
-2026-01-15 09:36:12.553 [main] INFO  testCases.TC_010LinksTest - Clicking Home link
-2026-01-15 09:36:13.839 [main] INFO  testCases.TC_010LinksTest - Home link validated successfully
-2026-01-15 09:36:14.642 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/linksTest_20260115093614.png
-2026-01-15 09:36:14.974 [main] INFO  testCases.TC_010LinksTest - Browser closed successfully.
-2026-01-15 09:36:15.572 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-15 09:36:15.572 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-15 09:36:15.573 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-15 09:36:19.347 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-15 09:53:27.736 [main] INFO  testCases.TC_010LinksTest - Starting test...
-2026-01-15 09:53:35.125 [main] INFO  testCases.TC_010LinksTest - Navigated to: https://demoqa.com/
-2026-01-15 09:53:35.193 [main] INFO  testCases.TC_010LinksTest - ===== Starting Links Page Test =====
-2026-01-15 09:53:35.361 [main] INFO  testCases.TC_010LinksTest - Clicked on Elements link
-2026-01-15 09:53:35.515 [main] INFO  testCases.TC_010LinksTest - Opened Links page from Elements menu
-2026-01-15 09:53:35.528 [main] INFO  testCases.TC_010LinksTest - Clicking Home link
-2026-01-15 09:53:57.537 [main] INFO  testCases.TC_010LinksTest - Home link validated successfully
-2026-01-15 09:53:57.957 [main] INFO  testCases.TC_010LinksTest - CreatedLink validated successfully : 201
-2026-01-15 09:53:58.301 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/linksTest_20260115095358.png
-2026-01-15 09:53:58.535 [main] INFO  testCases.TC_010LinksTest - Browser closed successfully.
-2026-01-15 09:53:58.894 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-15 09:53:58.894 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-15 09:53:58.894 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-15 09:54:02.716 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-15 10:02:13.241 [main] INFO  testCases.TC_010LinksTest - Starting test...
-2026-01-15 10:02:43.194 [main] INFO  testCases.TC_010LinksTest - Navigated to: https://demoqa.com/
-2026-01-15 10:02:43.277 [main] INFO  testCases.TC_010LinksTest - ===== Starting Links Page Test =====
-2026-01-15 10:02:43.752 [main] INFO  testCases.TC_010LinksTest - Clicked on Elements link
-2026-01-15 10:02:47.398 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/linksTest_20260115100247.png
-2026-01-15 10:02:48.280 [main] INFO  testCases.TC_010LinksTest - Browser closed successfully.
-2026-01-15 10:02:49.547 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-15 10:02:49.548 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-15 10:02:49.548 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-15 10:02:54.911 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-15 16:03:35.042 [main] INFO  testCases.TC_010LinksTest - Starting test...
-2026-01-15 16:03:51.083 [main] INFO  testCases.TC_010LinksTest - Navigated to: https://demoqa.com/
-2026-01-15 16:03:51.138 [main] INFO  testCases.TC_010LinksTest - ===== Starting Links Page Test =====
-2026-01-15 16:03:51.335 [main] INFO  testCases.TC_010LinksTest - Clicked on Elements link
-2026-01-15 16:03:51.461 [main] INFO  testCases.TC_010LinksTest - Opened Links page from Elements menu
-2026-01-15 16:03:51.475 [main] INFO  testCases.TC_010LinksTest - Clicking Home link
-2026-01-15 16:03:53.179 [main] INFO  testCases.TC_010LinksTest - Home link validated successfully
-2026-01-15 16:03:54.089 [main] INFO  testCases.TC_010LinksTest - CreatedLink validated successfully : 201
-2026-01-15 16:03:58.842 [main] INFO  testCases.TC_010LinksTest - ===== Links Page Test Completed Successfully =====
-2026-01-15 16:03:59.177 [main] INFO  testCases.TC_010LinksTest - Browser closed successfully.
-2026-01-15 16:03:59.611 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-15 16:03:59.613 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-15 16:03:59.613 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-15 16:04:03.553 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-15 17:43:26.821 [main] INFO  testCases.TC_011BrokenLinksTest - Starting test...
-2026-01-15 17:44:12.159 [main] INFO  testCases.TC_011BrokenLinksTest - Navigated to: https://demoqa.com/
-2026-01-15 17:44:12.269 [main] INFO  testCases.TC_011BrokenLinksTest - ===== Starting Broken Links Test (HTTP Status Code) =====
-2026-01-15 17:44:12.592 [main] INFO  testCases.TC_011BrokenLinksTest - Clicked on Elements link
-2026-01-15 17:44:14.171 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/brokenLinksTest_20260115174414.png
-2026-01-15 17:44:14.738 [main] INFO  testCases.TC_011BrokenLinksTest - Browser closed successfully.
-2026-01-15 17:44:15.980 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-15 17:44:15.980 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-15 17:44:15.980 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-15 17:44:34.461 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-15 17:45:43.839 [main] INFO  testCases.TC_011BrokenLinksTest - Starting test...
-2026-01-15 17:45:57.491 [main] INFO  testCases.TC_011BrokenLinksTest - Navigated to: https://demoqa.com/
-2026-01-15 17:45:57.582 [main] INFO  testCases.TC_011BrokenLinksTest - ===== Starting Broken Links Test (HTTP Status Code) =====
-2026-01-15 17:45:57.875 [main] INFO  testCases.TC_011BrokenLinksTest - Clicked on Elements link
-2026-01-15 17:45:59.390 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/brokenLinksTest_20260115174559.png
-2026-01-15 17:45:59.857 [main] INFO  testCases.TC_011BrokenLinksTest - Browser closed successfully.
-2026-01-15 17:46:00.447 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-15 17:46:00.451 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-15 17:46:00.451 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-15 17:46:18.516 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-15 17:57:41.933 [main] INFO  testCases.TC_011BrokenLinksTest - Starting test...
-2026-01-15 17:57:57.582 [main] INFO  testCases.TC_011BrokenLinksTest - Navigated to: https://demoqa.com/
-2026-01-15 17:57:57.694 [main] INFO  testCases.TC_011BrokenLinksTest - ===== Starting Broken Links Test (HTTP Status Code) =====
-2026-01-15 17:57:58.041 [main] INFO  testCases.TC_011BrokenLinksTest - Clicked on Elements link
-2026-01-15 17:57:58.295 [main] INFO  testCases.TC_011BrokenLinksTest - Opened Broken Links page
-2026-01-15 17:57:58.895 [main] INFO  testCases.TC_011BrokenLinksTest - Valid link status: 301
-2026-01-15 17:57:59.278 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/brokenLinksTest_20260115175759.png
-2026-01-15 17:57:59.674 [main] INFO  testCases.TC_011BrokenLinksTest - Browser closed successfully.
-2026-01-15 17:58:00.347 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-15 17:58:00.354 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-15 17:58:00.354 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-15 17:58:16.845 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
-2026-01-15 18:03:18.819 [main] INFO  testCases.TC_011BrokenLinksTest - Starting test...
-2026-01-15 18:03:34.992 [main] INFO  testCases.TC_011BrokenLinksTest - Navigated to: https://demoqa.com/
-2026-01-15 18:03:35.085 [main] INFO  testCases.TC_011BrokenLinksTest - ===== Starting Broken Links Test (HTTP Status Code) =====
-2026-01-15 18:03:35.408 [main] INFO  testCases.TC_011BrokenLinksTest - Clicked on Elements link
-2026-01-15 18:03:35.674 [main] INFO  testCases.TC_011BrokenLinksTest - Opened Broken Links page
-2026-01-15 18:03:36.820 [main] INFO  testCases.TC_011BrokenLinksTest - Valid link status: 301
-2026-01-15 18:03:38.453 [main] INFO  testCases.TC_011BrokenLinksTest - Broken link status: 500
-2026-01-15 18:03:39.995 [main] INFO  testCases.TC_011BrokenLinksTest - Valid image status: 200
-2026-01-15 18:03:40.687 [main] INFO  testCases.TC_011BrokenLinksTest - Broken image status: 200
-2026-01-15 18:03:40.958 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/brokenLinksTest_20260115180340.png
-2026-01-15 18:03:43.007 [main] INFO  testCases.TC_011BrokenLinksTest - Browser closed successfully.
-2026-01-15 18:03:43.428 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
-2026-01-15 18:03:43.428 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
-2026-01-15 18:03:43.428 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
-2026-01-15 18:04:02.674 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-01-21 21:17:03.500 [main] INFO  testCases.TC_012UploadDownloadTest - Starting test...
+2026-01-21 21:18:28.011 [main] INFO  testCases.TC_012UploadDownloadTest - Navigated to: https://demoqa.com/
+2026-01-21 21:18:28.052 [main] INFO  testCases.TC_012UploadDownloadTest - ===== Starting Upload & Download Test =====
+2026-01-21 21:18:28.226 [main] INFO  testCases.TC_012UploadDownloadTest - Clicked Elements link
+2026-01-21 21:18:28.369 [main] INFO  testCases.TC_012UploadDownloadTest - Opened Upload & Download page
+2026-01-21 21:18:28.595 [main] INFO  pageObjects.UploadDownloadPage - Clicked Download button
+2026-01-21 21:18:28.601 [main] INFO  pageObjects.UploadDownloadPage - Waiting for file download in: D:\SeleniumLearning\DemoQa\downloads
+2026-01-21 21:18:38.791 [main] WARN  pageObjects.UploadDownloadPage - Downloaded file NOT found within timeout: sampleFile.jpeg
+2026-01-21 21:18:39.068 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/uploadDownloadTest_20260121211839.png
+2026-01-21 21:18:39.428 [main] INFO  testCases.TC_012UploadDownloadTest - Browser closed successfully.
+2026-01-21 21:18:40.220 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-01-21 21:18:40.220 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-01-21 21:18:40.220 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-01-21 21:18:44.323 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-01-21 21:25:19.244 [main] INFO  testCases.TC_012UploadDownloadTest - Starting test...
+2026-01-21 21:25:37.716 [main] INFO  testCases.TC_012UploadDownloadTest - Navigated to: https://demoqa.com/
+2026-01-21 21:25:37.750 [main] INFO  testCases.TC_012UploadDownloadTest - ===== Starting Upload & Download Test =====
+2026-01-21 21:25:37.902 [main] INFO  testCases.TC_012UploadDownloadTest - Clicked Elements link
+2026-01-21 21:25:38.027 [main] INFO  testCases.TC_012UploadDownloadTest - Opened Upload & Download page
+2026-01-21 21:25:38.131 [main] INFO  pageObjects.UploadDownloadPage - Uploaded file: D:\SeleniumLearning\DemoQa\testData\sampleUpload.txt
+2026-01-21 21:25:38.214 [main] INFO  pageObjects.UploadDownloadPage - Uploaded file path text displayed: C:\fakepath\sampleUpload.txt
+2026-01-21 21:25:38.214 [main] INFO  testCases.TC_012UploadDownloadTest - Upload validation passed
+2026-01-21 21:25:38.214 [main] INFO  testCases.TC_012UploadDownloadTest - ===== Upload & Download Test Completed Successfully =====
+2026-01-21 21:25:38.461 [main] INFO  testCases.TC_012UploadDownloadTest - Browser closed successfully.
+2026-01-21 21:25:38.790 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-01-21 21:25:38.790 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-01-21 21:25:38.790 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-01-21 21:25:42.548 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
