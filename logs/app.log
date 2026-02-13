@@ -26,3 +26,263 @@
 2026-01-21 21:25:38.790 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
 2026-01-21 21:25:38.790 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
 2026-01-21 21:25:42.548 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-02-13 22:35:18.806 [main] INFO  testCases.TC_013DynamicPropertiesTest - Starting test...
+2026-02-13 22:35:51.799 [main] INFO  testCases.TC_013DynamicPropertiesTest - Navigated to: https://demoqa.com/
+2026-02-13 22:35:51.835 [main] INFO  testCases.TC_013DynamicPropertiesTest - ===== Starting Dynamic Properties Test =====
+2026-02-13 22:35:51.976 [main] INFO  testCases.TC_013DynamicPropertiesTest - Clicked Elements link
+2026-02-13 22:35:57.398 [main] INFO  pageObjects.DynamicPropertiesPage - Button is enabled after 5 Sec
+2026-02-13 22:35:57.494 [main] INFO  pageObjects.DynamicPropertiesPage - Clicked Enabled  button
+2026-02-13 22:35:57.494 [main] INFO  testCases.TC_013DynamicPropertiesTest - Enabled button test passed
+2026-02-13 22:35:57.518 [main] INFO  pageObjects.DynamicPropertiesPage - Button is visible after 5 Sec
+2026-02-13 22:35:57.552 [main] INFO  testCases.TC_013DynamicPropertiesTest - Visible button test passed
+2026-02-13 22:35:57.585 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: mt-4 text-danger btn btn-primary
+2026-02-13 22:36:03.625 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: mt-4 text-danger btn btn-primary
+2026-02-13 22:36:03.792 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/dynamicPropertiesTest_20260213223603.png
+2026-02-13 22:36:04.113 [main] INFO  testCases.TC_013DynamicPropertiesTest - Browser closed successfully.
+2026-02-13 22:36:04.622 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-02-13 22:36:04.622 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-02-13 22:36:04.622 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-02-13 22:36:08.793 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-02-13 22:46:47.671 [main] INFO  testCases.TC_013DynamicPropertiesTest - Starting test...
+2026-02-13 22:46:59.381 [main] INFO  testCases.TC_013DynamicPropertiesTest - Navigated to: https://demoqa.com/
+2026-02-13 22:46:59.413 [main] INFO  testCases.TC_013DynamicPropertiesTest - ===== Starting Dynamic Properties Test =====
+2026-02-13 22:46:59.577 [main] INFO  testCases.TC_013DynamicPropertiesTest - Clicked Elements link
+2026-02-13 22:47:04.931 [main] INFO  pageObjects.DynamicPropertiesPage - Button is enabled after 5 Sec
+2026-02-13 22:47:05.030 [main] INFO  pageObjects.DynamicPropertiesPage - Clicked Enabled  button
+2026-02-13 22:47:05.030 [main] INFO  testCases.TC_013DynamicPropertiesTest - Enabled button test passed
+2026-02-13 22:47:05.057 [main] INFO  pageObjects.DynamicPropertiesPage - Button is visible after 5 Sec
+2026-02-13 22:47:05.088 [main] INFO  testCases.TC_013DynamicPropertiesTest - Visible button test passed
+2026-02-13 22:47:05.116 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:47:11.141 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:47:11.322 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/dynamicPropertiesTest_20260213224711.png
+2026-02-13 22:47:11.576 [main] INFO  testCases.TC_013DynamicPropertiesTest - Browser closed successfully.
+2026-02-13 22:47:11.909 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-02-13 22:47:11.909 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-02-13 22:47:11.909 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-02-13 22:47:15.984 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-02-13 22:52:18.576 [main] INFO  testCases.TC_013DynamicPropertiesTest - Starting test...
+2026-02-13 22:52:45.884 [main] INFO  testCases.TC_013DynamicPropertiesTest - Navigated to: https://demoqa.com/
+2026-02-13 22:52:45.925 [main] INFO  testCases.TC_013DynamicPropertiesTest - ===== Starting Dynamic Properties Test =====
+2026-02-13 22:52:46.056 [main] INFO  testCases.TC_013DynamicPropertiesTest - Clicked Elements link
+2026-02-13 22:52:51.425 [main] INFO  pageObjects.DynamicPropertiesPage - Button is enabled after 5 Sec
+2026-02-13 22:52:51.533 [main] INFO  pageObjects.DynamicPropertiesPage - Clicked Enabled  button
+2026-02-13 22:52:51.533 [main] INFO  testCases.TC_013DynamicPropertiesTest - Enabled button test passed
+2026-02-13 22:52:51.562 [main] INFO  pageObjects.DynamicPropertiesPage - Button is visible after 5 Sec
+2026-02-13 22:52:51.581 [main] INFO  testCases.TC_013DynamicPropertiesTest - Visible button test passed
+2026-02-13 22:52:51.610 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:51.637 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:52.172 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:52.698 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:53.237 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:53.780 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:54.338 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:54.895 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:55.426 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:55.976 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:56.508 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:57.056 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:57.597 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:58.137 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button class: rgba(220, 53, 69, 1)
+2026-02-13 22:52:58.333 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/dynamicPropertiesTest_20260213225258.png
+2026-02-13 22:52:58.601 [main] INFO  testCases.TC_013DynamicPropertiesTest - Browser closed successfully.
+2026-02-13 22:52:58.937 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-02-13 22:52:58.939 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-02-13 22:52:58.939 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-02-13 22:53:03.129 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-02-13 23:01:00.413 [main] INFO  testCases.TC_013DynamicPropertiesTest - Starting test...
+2026-02-13 23:01:11.084 [main] INFO  testCases.TC_013DynamicPropertiesTest - Navigated to: https://demoqa.com/
+2026-02-13 23:01:11.114 [main] INFO  testCases.TC_013DynamicPropertiesTest - ===== Starting Dynamic Properties Test =====
+2026-02-13 23:01:11.259 [main] INFO  testCases.TC_013DynamicPropertiesTest - Clicked Elements link
+2026-02-13 23:01:16.583 [main] INFO  pageObjects.DynamicPropertiesPage - Button is enabled after 5 Sec
+2026-02-13 23:01:16.654 [main] INFO  pageObjects.DynamicPropertiesPage - Clicked Enabled  button
+2026-02-13 23:01:16.654 [main] INFO  testCases.TC_013DynamicPropertiesTest - Enabled button test passed
+2026-02-13 23:01:16.683 [main] INFO  pageObjects.DynamicPropertiesPage - Button is visible after 5 Sec
+2026-02-13 23:01:16.710 [main] INFO  testCases.TC_013DynamicPropertiesTest - Visible button test passed
+2026-02-13 23:01:16.733 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:16.768 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:17.311 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:17.851 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:18.402 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:18.936 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:19.493 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:20.019 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:20.577 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:21.109 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:21.639 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:22.168 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:22.709 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:23.250 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:23.792 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:24.336 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:24.876 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:25.414 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:25.935 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:26.475 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:27.003 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:01:27.163 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/dynamicPropertiesTest_20260213230127.png
+2026-02-13 23:01:27.398 [main] INFO  testCases.TC_013DynamicPropertiesTest - Browser closed successfully.
+2026-02-13 23:01:27.723 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-02-13 23:01:27.723 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-02-13 23:01:27.727 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-02-13 23:01:32.096 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-02-13 23:09:51.723 [main] INFO  testCases.TC_013DynamicPropertiesTest - Starting test...
+2026-02-13 23:10:06.347 [main] INFO  testCases.TC_013DynamicPropertiesTest - Navigated to: https://demoqa.com/
+2026-02-13 23:10:06.383 [main] INFO  testCases.TC_013DynamicPropertiesTest - ===== Starting Dynamic Properties Test =====
+2026-02-13 23:10:06.520 [main] INFO  testCases.TC_013DynamicPropertiesTest - Clicked Elements link
+2026-02-13 23:10:11.891 [main] INFO  pageObjects.DynamicPropertiesPage - Button is enabled after 5 Sec
+2026-02-13 23:10:12.010 [main] INFO  pageObjects.DynamicPropertiesPage - Clicked Enabled  button
+2026-02-13 23:10:12.010 [main] INFO  testCases.TC_013DynamicPropertiesTest - Enabled button test passed
+2026-02-13 23:10:12.050 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:12.081 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:12.625 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:13.161 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:13.693 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:14.249 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:14.770 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:15.330 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:15.873 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:16.398 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:16.938 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:17.466 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:18.014 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:18.547 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:19.086 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:19.616 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:20.148 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:20.676 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:21.211 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:21.732 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:22.259 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:10:22.433 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/dynamicPropertiesTest_20260213231022.png
+2026-02-13 23:10:22.696 [main] INFO  testCases.TC_013DynamicPropertiesTest - Browser closed successfully.
+2026-02-13 23:10:23.024 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-02-13 23:10:23.024 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-02-13 23:10:23.024 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-02-13 23:10:27.137 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-02-13 23:12:36.364 [main] INFO  testCases.TC_013DynamicPropertiesTest - Starting test...
+2026-02-13 23:13:06.292 [main] INFO  testCases.TC_013DynamicPropertiesTest - Navigated to: https://demoqa.com/
+2026-02-13 23:13:06.338 [main] INFO  testCases.TC_013DynamicPropertiesTest - ===== Starting Dynamic Properties Test =====
+2026-02-13 23:13:06.485 [main] INFO  testCases.TC_013DynamicPropertiesTest - Clicked Elements link
+2026-02-13 23:13:12.166 [main] INFO  pageObjects.DynamicPropertiesPage - Button is enabled after 5 Sec
+2026-02-13 23:13:12.292 [main] INFO  pageObjects.DynamicPropertiesPage - Clicked Enabled  button
+2026-02-13 23:13:12.292 [main] INFO  testCases.TC_013DynamicPropertiesTest - Enabled button test passed
+2026-02-13 23:13:12.320 [main] INFO  pageObjects.DynamicPropertiesPage - Button is visible after 5 Sec
+2026-02-13 23:13:12.356 [main] INFO  testCases.TC_013DynamicPropertiesTest - Visible button test passed
+2026-02-13 23:13:12.398 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:12.436 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:12.958 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:13.498 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:14.036 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:14.575 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:15.099 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:15.633 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:16.163 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:16.685 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:17.207 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:17.744 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:18.269 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:18.798 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:19.333 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:19.859 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:20.388 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:20.915 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:21.440 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:21.967 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:22.492 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:13:22.677 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/dynamicPropertiesTest_20260213231322.png
+2026-02-13 23:13:22.925 [main] INFO  testCases.TC_013DynamicPropertiesTest - Browser closed successfully.
+2026-02-13 23:13:23.253 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-02-13 23:13:23.253 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-02-13 23:13:23.253 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-02-13 23:13:27.537 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-02-13 23:13:55.158 [main] INFO  testCases.TC_013DynamicPropertiesTest - Starting test...
+2026-02-13 23:14:31.846 [main] INFO  testCases.TC_013DynamicPropertiesTest - Navigated to: https://demoqa.com/
+2026-02-13 23:14:31.871 [main] INFO  testCases.TC_013DynamicPropertiesTest - ===== Starting Dynamic Properties Test =====
+2026-02-13 23:14:32.040 [main] INFO  testCases.TC_013DynamicPropertiesTest - Clicked Elements link
+2026-02-13 23:14:37.436 [main] INFO  pageObjects.DynamicPropertiesPage - Button is enabled after 5 Sec
+2026-02-13 23:14:37.542 [main] INFO  pageObjects.DynamicPropertiesPage - Clicked Enabled  button
+2026-02-13 23:14:37.542 [main] INFO  testCases.TC_013DynamicPropertiesTest - Enabled button test passed
+2026-02-13 23:14:37.566 [main] INFO  pageObjects.DynamicPropertiesPage - Button is visible after 5 Sec
+2026-02-13 23:14:37.602 [main] INFO  testCases.TC_013DynamicPropertiesTest - Visible button test passed
+2026-02-13 23:14:37.634 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:37.683 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:38.220 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:38.778 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:39.304 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:39.846 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:40.387 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:40.930 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:41.472 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:41.997 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:42.526 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:43.057 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:43.594 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:44.118 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:44.643 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:45.172 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:45.733 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:46.261 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:46.785 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:47.314 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:47.838 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:14:48.046 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/dynamicPropertiesTest_20260213231448.png
+2026-02-13 23:14:48.306 [main] INFO  testCases.TC_013DynamicPropertiesTest - Browser closed successfully.
+2026-02-13 23:14:48.640 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-02-13 23:14:48.640 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-02-13 23:14:48.640 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-02-13 23:14:52.817 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-02-13 23:16:13.242 [main] INFO  testCases.TC_013DynamicPropertiesTest - Starting test...
+2026-02-13 23:17:13.351 [main] INFO  testCases.TC_013DynamicPropertiesTest - Navigated to: https://demoqa.com/
+2026-02-13 23:17:13.387 [main] INFO  testCases.TC_013DynamicPropertiesTest - ===== Starting Dynamic Properties Test =====
+2026-02-13 23:17:13.530 [main] INFO  testCases.TC_013DynamicPropertiesTest - Clicked Elements link
+2026-02-13 23:17:18.858 [main] INFO  pageObjects.DynamicPropertiesPage - Button is enabled after 5 Sec
+2026-02-13 23:17:18.997 [main] INFO  pageObjects.DynamicPropertiesPage - Clicked Enabled  button
+2026-02-13 23:17:18.997 [main] INFO  testCases.TC_013DynamicPropertiesTest - Enabled button test passed
+2026-02-13 23:17:19.026 [main] INFO  pageObjects.DynamicPropertiesPage - Button is visible after 5 Sec
+2026-02-13 23:17:19.059 [main] INFO  testCases.TC_013DynamicPropertiesTest - Visible button test passed
+2026-02-13 23:17:19.094 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:19.109 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:19.653 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:20.179 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:20.725 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:21.266 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:21.793 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:22.321 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:22.868 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:23.398 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:23.929 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:24.466 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:24.996 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:25.523 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:26.049 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:26.574 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:27.093 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:27.623 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:28.168 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:28.705 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:29.229 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change, button color: rgba(220, 53, 69, 1)
+2026-02-13 23:17:29.433 [main] INFO  utilities.ScreenshotUtil - Screenshot saved to: D:\SeleniumLearning\DemoQa/screenshots/dynamicPropertiesTest_20260213231729.png
+2026-02-13 23:17:29.749 [main] INFO  testCases.TC_013DynamicPropertiesTest - Browser closed successfully.
+2026-02-13 23:17:30.130 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-02-13 23:17:30.130 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-02-13 23:17:30.130 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-02-13 23:17:34.559 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-02-13 23:30:05.741 [main] INFO  testCases.TC_013DynamicPropertiesTest - Starting test...
+2026-02-13 23:30:33.356 [main] INFO  testCases.TC_013DynamicPropertiesTest - Navigated to: https://demoqa.com/
+2026-02-13 23:30:33.393 [main] INFO  testCases.TC_013DynamicPropertiesTest - ===== Starting Dynamic Properties Test =====
+2026-02-13 23:30:33.552 [main] INFO  testCases.TC_013DynamicPropertiesTest - Clicked Elements link
+2026-02-13 23:30:38.940 [main] INFO  pageObjects.DynamicPropertiesPage - Button is enabled after 5 Sec
+2026-02-13 23:30:39.062 [main] INFO  pageObjects.DynamicPropertiesPage - Clicked Enabled button
+2026-02-13 23:30:39.062 [main] INFO  testCases.TC_013DynamicPropertiesTest - Enabled button test passed
+2026-02-13 23:30:39.091 [main] INFO  pageObjects.DynamicPropertiesPage - Button is visible after 5 Sec
+2026-02-13 23:30:39.109 [main] INFO  testCases.TC_013DynamicPropertiesTest - Visible button test passed
+2026-02-13 23:30:39.215 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change button color: rgba(220, 53, 69, 1)
+2026-02-13 23:30:39.215 [main] INFO  pageObjects.DynamicPropertiesPage - Waiting for Color Change button to change to 'text-danger'
+2026-02-13 23:30:39.244 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change button is now 'text-danger'
+2026-02-13 23:30:39.293 [main] INFO  pageObjects.DynamicPropertiesPage - Color Change button color: rgba(220, 53, 69, 1)
+2026-02-13 23:30:39.313 [main] INFO  testCases.TC_013DynamicPropertiesTest - Button text color change test passed
+2026-02-13 23:30:39.551 [main] INFO  testCases.TC_013DynamicPropertiesTest - Browser closed successfully.
+2026-02-13 23:30:39.917 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-02-13 23:30:39.919 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-02-13 23:30:39.919 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-02-13 23:30:43.864 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
