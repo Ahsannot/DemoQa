@@ -17,7 +17,8 @@
 <!--        <class name="testCases.TC_008WebTablesTest"/>-->
 <!--        <class name="testCases.TC_009ButtonsTest"/>-->
 <!--        <class name="testCases.TC_010LinksTest"/>-->
-            <class name="testCases.TC_011BrokenLinksTest"/>
+<!--        <class name="testCases.TC_011BrokenLinksTest"/>-->
+            <class name="testCases.TC_012UploadDownloadTest"/>
         </classes>
     </test>
 
