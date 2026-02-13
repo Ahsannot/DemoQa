@@ -19,6 +19,7 @@
 <!--        <class name="testCases.TC_010LinksTest"/>-->
 <!--        <class name="testCases.TC_011BrokenLinksTest"/>-->
             <class name="testCases.TC_012UploadDownloadTest"/>
+            <class name="testCases.TC_013DynamicPropertiesTest"/>
         </classes>
     </test>
 
