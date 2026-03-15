@@ -353,3 +353,21 @@ java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" 
 2026-03-15 23:21:37.582 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
 2026-03-15 23:21:37.588 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
 2026-03-15 23:21:41.421 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
+2026-03-15 23:28:57.743 [main] INFO  testCases.TC_013DynamicPropertiesTest - ===== Test Execution Started =====
+2026-03-15 23:28:59.388 [main] INFO  testCases.TC_013DynamicPropertiesTest - Running on Selenium Grid - Chrome
+2026-03-15 23:29:02.392 [main] INFO  testCases.TC_013DynamicPropertiesTest - Navigated to: https://demoqa.com/
+2026-03-15 23:29:02.424 [main] INFO  testCases.TC_013DynamicPropertiesTest - ===== Starting Dynamic Properties Test =====
+2026-03-15 23:29:02.544 [main] INFO  testCases.TC_013DynamicPropertiesTest - Clicked Elements link
+2026-03-15 23:29:08.181 [main] INFO  pageObjects.DynamicPropertiesPage - Button is enabled after 5 Sec
+2026-03-15 23:29:08.339 [main] INFO  pageObjects.DynamicPropertiesPage - Clicked Enabled button
+2026-03-15 23:29:08.340 [main] INFO  testCases.TC_013DynamicPropertiesTest - Enabled button test passed
+2026-03-15 23:29:08.409 [main] INFO  pageObjects.DynamicPropertiesPage - Button is visible after 5 Sec
+2026-03-15 23:29:08.464 [main] INFO  testCases.TC_013DynamicPropertiesTest - 'Visible button' test passed
+2026-03-15 23:29:08.464 [main] INFO  pageObjects.DynamicPropertiesPage - Waiting for button to change the color to 'Red'
+2026-03-15 23:29:08.501 [main] INFO  pageObjects.DynamicPropertiesPage - Button of the color is changed to 'Red' now 
+2026-03-15 23:29:08.530 [main] INFO  testCases.TC_013DynamicPropertiesTest - Button text color is changed, test passed
+2026-03-15 23:29:08.615 [main] INFO  testCases.TC_013DynamicPropertiesTest - Browser closed successfully.
+2026-03-15 23:29:08.976 [main] INFO  utilities.EmailReportSender - Sender email: ahsan.clariv@gmail.com
+2026-03-15 23:29:08.976 [main] INFO  utilities.EmailReportSender - Sender password: mstv vggb nbmk kehz
+2026-03-15 23:29:08.976 [main] INFO  utilities.EmailReportSender - SMTP properties: {mail.smtp.port=587, mail.smtp.auth=true, mail.smtp.starttls.enable=true, mail.smtp.host=smtp.gmail.com}
+2026-03-15 23:29:12.880 [main] INFO  utilities.EmailReportSender - Report sent successfully to hafizgee07@gmail.com
