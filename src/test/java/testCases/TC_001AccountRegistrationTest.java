@@ -19,7 +19,7 @@ public class TC_001AccountRegistrationTest extends BaseClass {
 
         logger.info("===== Starting Account Registration Test =====");
 
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
 
         validatePageMessageHard(
                 homePage.getConfirmationMessage(),
@@ -28,7 +28,7 @@ public class TC_001AccountRegistrationTest extends BaseClass {
         );
         homePage.clickBookStoreApplicationLink();
 
-        BooksPage booksPage = new BooksPage(driver);
+        BooksPage booksPage = new BooksPage(getDriver());
         validatePageMessageHard(
                 booksPage.getConfirmationMessage(),
                 "Book Store",
@@ -37,7 +37,7 @@ public class TC_001AccountRegistrationTest extends BaseClass {
 
         booksPage.clickLoginLink();
 
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage(getDriver());
         validatePageMessageHard(
                 loginPage.getConfirmationMessage(),
                 "Login in Book Store",
@@ -46,7 +46,7 @@ public class TC_001AccountRegistrationTest extends BaseClass {
 
         loginPage.clickNewUserButton();
 
-        RegisterPage registerPage = new RegisterPage(driver);
+        RegisterPage registerPage = new RegisterPage(getDriver());
         validatePageMessageHard(
                 registerPage.getConfirmationMessage(),
                 "Register to Book Store",
@@ -59,7 +59,7 @@ public class TC_001AccountRegistrationTest extends BaseClass {
         registerPage.enterPassword(randomAlphaNumeric() + "Pass@123");
         registerPage.clickRegisterButton();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(5));
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 
         validatePageMessageHard(

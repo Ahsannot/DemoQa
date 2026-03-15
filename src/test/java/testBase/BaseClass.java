@@ -3,39 +3,121 @@ package testBase;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+
+import org.openqa.selenium.remote.RemoteWebDriver;
+
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
+
 import org.testng.asserts.SoftAssert;
 import utilities.ConfigReader;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.URL;
 import java.time.Duration;
 
 public class BaseClass {
 
-    public WebDriver driver;
-    public ChromeOptions chromeOptions;
+    public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     public Logger logger;
+//    public String browser;
 
+    public WebDriver getDriver() {
+        return driver.get();
+    }
+//  used for crossbrowser
+    //public String browser;
+    //  @Parameters("browser")
+    //  public void setup(String browser) throws IOException {
+//    this.browser = browser;
     @BeforeClass
     public void setup() throws IOException {
+
         logger = LogManager.getLogger(this.getClass());
-        logger.info("Starting test...");
+        logger.info("===== Test Execution Started =====");
 
-        chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--incognito");
+        String browser = ConfigReader.getProperty("browser");
+        String env = ConfigReader.getProperty("execution_env");
+        String hubURL = ConfigReader.getProperty("hubURL");
+        boolean headless = Boolean.parseBoolean(ConfigReader.getProperty("headless"));
 
-        driver = new ChromeDriver(chromeOptions);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
+        try {
 
-        driver.get(ConfigReader.getProperty("baseURL"));
+            if (browser.equalsIgnoreCase("chrome")) {
+
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--incognito");
+
+                if (headless) {
+                    options.addArguments("--headless=new");
+                }
+
+                if (env.equalsIgnoreCase("grid")) {
+
+                    driver.set(new RemoteWebDriver(new URL(hubURL), options));
+                    logger.info("Running on Selenium Grid - Chrome");
+
+                } else {
+
+                    driver.set(new ChromeDriver(options));
+                    logger.info("Running on Local Chrome");
+
+                }
+
+            } else if (browser.equalsIgnoreCase("edge")) {
+
+                EdgeOptions options = new EdgeOptions();
+
+                if (env.equalsIgnoreCase("grid")) {
+
+                    driver.set(new RemoteWebDriver(new URL(hubURL), options));
+                    logger.info("Running on Selenium Grid - Edge");
+
+                } else {
+
+                    driver.set(new EdgeDriver());
+                    logger.info("Running on Local Edge");
+
+                }
+
+            } else if (browser.equalsIgnoreCase("firefox")) {
+
+                FirefoxOptions options = new FirefoxOptions();
+
+                if (env.equalsIgnoreCase("grid")) {
+
+                    driver.set(new RemoteWebDriver(new URL(hubURL), options));
+                    logger.info("Running on Selenium Grid - Firefox");
+
+                } else {
+
+                    driver.set(new FirefoxDriver());
+                    logger.info("Running on Local Firefox");
+
+                }
+
+            }
+
+        } catch (Exception e) {
+            logger.error("Browser initialization failed", e);
+        }
+
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        getDriver().manage().window().maximize();
+
+        getDriver().get(ConfigReader.getProperty("baseURL"));
+
         logger.info("Navigated to: " + ConfigReader.getProperty("baseURL"));
     }
 
@@ -84,8 +166,12 @@ public class BaseClass {
 
     @AfterClass
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
+
+        if (getDriver() != null) {
+
+            getDriver().quit();
+            driver.remove();
+
             logger.info("Browser closed successfully.");
         }
     }

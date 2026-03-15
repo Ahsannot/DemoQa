@@ -15,33 +15,33 @@ public class TC_010LinksTest extends BaseClass {
         logger.info("===== Starting Links Page Test =====");
 
         // -------- NAVIGATION --------
-        HomePage home = new HomePage(driver);
+        HomePage home = new HomePage(getDriver());
         home.clickElementsLink();
         logger.info("Clicked on Elements link");
 
-        ElementsMenuComponent menu = new ElementsMenuComponent(driver);
+        ElementsMenuComponent menu = new ElementsMenuComponent(getDriver());
         menu.openLinks();
         logger.info("Opened Links page from Elements menu");
 
-        LinksPage linksPage = new LinksPage(driver);
+        LinksPage linksPage = new LinksPage(getDriver());
 
         // -------- HOME LINK --------
         logger.info("Clicking Home link");
-        String parentWindow = driver.getWindowHandle();
+        String parentWindow = getDriver().getWindowHandle();
         linksPage.clickHomeLink();
 
         // Switch to new tab
-        for (String window : driver.getWindowHandles()) {
+        for (String window : getDriver().getWindowHandles()) {
             if (!window.equals(parentWindow)) {
-                driver.switchTo().window(window);
+                getDriver().switchTo().window(window);
                 break;
             }
         }
 
-        Assert.assertTrue(driver.getCurrentUrl().contains("demoqa.com"),
-                "Home link did not open correct URL. Current URL: " + driver.getCurrentUrl());
-        driver.close();
-        driver.switchTo().window(parentWindow);
+        Assert.assertTrue(getDriver().getCurrentUrl().contains("demoqa.com"),
+                "Home link did not open correct URL. Current URL: " + getDriver().getCurrentUrl());
+        getDriver().close();
+        getDriver().switchTo().window(parentWindow);
         logger.info("Home link validated successfully");
 
         // -------- OTHER LINKS --------

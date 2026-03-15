@@ -16,13 +16,13 @@ public class TC_008WebTablesTest extends BaseClass {
         logger.info("===== Starting Web Tables Test =====");
 
         // -------- NAVIGATION --------
-        HomePage home = new HomePage(driver);
+        HomePage home = new HomePage(getDriver());
         home.clickElementsLink();
 
-        ElementsMenuComponent menu = new ElementsMenuComponent(driver);
+        ElementsMenuComponent menu = new ElementsMenuComponent(getDriver());
         menu.openWebTables();
 
-        WebTablesPage webTables = new WebTablesPage(driver);
+        WebTablesPage webTables = new WebTablesPage(getDriver());
 
         // -------- ADD EMPLOYEE --------
         webTables.clickAddNewRecord();

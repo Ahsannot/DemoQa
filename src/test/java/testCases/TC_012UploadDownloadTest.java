@@ -17,15 +17,15 @@ public class TC_012UploadDownloadTest extends BaseClass {
         logger.info("===== Starting Upload & Download Test =====");
 
         // -------- NAVIGATION --------
-        HomePage home = new HomePage(driver);
+        HomePage home = new HomePage(getDriver());
         home.clickElementsLink();
         logger.info("Clicked Elements link");
 
-        ElementsMenuComponent menu = new ElementsMenuComponent(driver);
+        ElementsMenuComponent menu = new ElementsMenuComponent(getDriver());
         menu.openUploadAndDownload();
         logger.info("Opened Upload & Download page");
 
-        UploadDownloadPage uploadDownloadPage = new UploadDownloadPage(driver);
+        UploadDownloadPage uploadDownloadPage = new UploadDownloadPage(getDriver());
 
         // -------- DOWNLOAD TEST --------
         uploadDownloadPage.clickDownloadButton();

@@ -2,6 +2,7 @@ package pageObjects;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,6 +40,8 @@ public class DynamicPropertiesPage extends BasePage {
     }
 
     public void clickEnableAfterButton() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", enableAfterButton);
         enableAfterButton.click();
         logger.info("Clicked Enabled button");
     }

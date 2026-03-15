@@ -17,15 +17,15 @@ public class TC_009ButtonsTest extends BaseClass {
 
         // -------- NAVIGATION --------
         logger.info("Navigating to Home Page");
-        HomePage home = new HomePage(driver);
+        HomePage home = new HomePage(getDriver());
         home.clickElementsLink();
         logger.info("Clicked on Elements link");
 
-        ElementsMenuComponent menu = new ElementsMenuComponent(driver);
+        ElementsMenuComponent menu = new ElementsMenuComponent(getDriver());
         menu.openButtons();
         logger.info("Opened Buttons page from Elements menu");
 
-        ButtonsPage buttonsPage = new ButtonsPage(driver);
+        ButtonsPage buttonsPage = new ButtonsPage(getDriver());
 
         // -------- DOUBLE CLICK --------
         logger.info("Performing double click action");

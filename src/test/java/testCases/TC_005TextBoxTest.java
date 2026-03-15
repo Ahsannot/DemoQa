@@ -17,20 +17,20 @@ public class TC_005TextBoxTest extends BaseClass {
 
         // ----------------- HOME PAGE -----------------
         // Initialize HomePage object
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
         homePage.clickElementsLink();
         logger.info("===== Home Page =====");
 
 
         // ----------------- ElementsMenuComponent PAGE -----------------
         // Initialize ElementsMenuComponent object
-        ElementsMenuComponent elementsComponentPage = new ElementsMenuComponent(driver);
+        ElementsMenuComponent elementsComponentPage = new ElementsMenuComponent(getDriver());
         elementsComponentPage.openTextBox();
         logger.info("===== Starting ElementsMenuComponent Page =====");
 
         // ----------------- TextBoxPage PAGE -----------------
         // Initialize TextBoxPage object
-        TextBoxPage textBoxPage = new TextBoxPage(driver);
+        TextBoxPage textBoxPage = new TextBoxPage(getDriver());
 
         String userName = randomAlphaNumeric().toUpperCase();
         String email = randomAlphaNumeric() + "@gmail.com";

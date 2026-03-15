@@ -18,17 +18,17 @@ public class TC_006CheckBoxPageTest extends BaseClass {
         logger.info("===== Starting CheckBoxPage Test =====");
 
         // ----------------- HOME PAGE -----------------
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
         homePage.clickElementsLink();
         logger.info("===== Home Page =====");
 
         // ----------------- ElementsMenuComponent PAGE -----------------
-        ElementsMenuComponent elementsComponentPage = new ElementsMenuComponent(driver);
+        ElementsMenuComponent elementsComponentPage = new ElementsMenuComponent(getDriver());
         elementsComponentPage.openCheckBox();
         logger.info("===== Starting ElementsMenuComponent Page =====");
 
         // ----------------- CheckBoxPage PAGE -----------------
-        CheckBoxPage checkBoxPage = new CheckBoxPage(driver);
+        CheckBoxPage checkBoxPage = new CheckBoxPage(getDriver());
 
         // Click actions
         checkBoxPage.clickExpandAllbtn();
