@@ -15,15 +15,15 @@ public class TC_007RadioBtnsPageTest extends BaseClass {
         logger.info("===== Starting Radio Button Test =====");
 
         // ----------------- HOME PAGE -----------------
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
         homePage.clickElementsLink();
 
         // ----------------- ELEMENTS MENU -----------------
-        ElementsMenuComponent elementsComponentPage = new ElementsMenuComponent(driver);
+        ElementsMenuComponent elementsComponentPage = new ElementsMenuComponent(getDriver());
         elementsComponentPage.openRadioButton();
 
         // ----------------- RADIO BUTTON PAGE -----------------
-        RadioButtonPage radioButtonPage = new RadioButtonPage(driver);
+        RadioButtonPage radioButtonPage = new RadioButtonPage(getDriver());
 
         // -------- YES RADIO BUTTON VALIDATION --------
         radioButtonPage.clickYes();

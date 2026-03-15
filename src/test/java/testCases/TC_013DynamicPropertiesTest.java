@@ -15,16 +15,17 @@ public class TC_013DynamicPropertiesTest extends BaseClass {
         logger.info("===== Starting Dynamic Properties Test =====");
 
         // -------- NAVIGATION --------
-        HomePage home = new HomePage(driver);
+        HomePage home = new HomePage(getDriver());
         home.clickElementsLink();
         logger.info("Clicked Elements link");
 
-        ElementsMenuComponent menu = new ElementsMenuComponent(driver);
+        ElementsMenuComponent menu = new ElementsMenuComponent(getDriver());
         menu.openDynamicProperties();
 
-        DynamicPropertiesPage dynamicPropertiesPage = new DynamicPropertiesPage(driver);
+        DynamicPropertiesPage dynamicPropertiesPage = new DynamicPropertiesPage(getDriver());
 
         // -------- ENABLE AFTER TEST --------
+
         dynamicPropertiesPage.waitForEnableAfterButton();
         dynamicPropertiesPage.clickEnableAfterButton();
         logger.info("Enabled button test passed");

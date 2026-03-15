@@ -40,35 +40,35 @@ public class TC_002AccountRegistrationTestDDTxlsx extends BaseClass {
 
         try {
             // Home Page
-            HomePage homePage = new HomePage(driver);
+            HomePage homePage = new HomePage(getDriver());
 
             validatePageMessageSoft(homePage.getConfirmationMessage(),
                     "Book Store Application", "HomePage", softAssert);
             homePage.clickBookStoreApplicationLink();
 
             // Books Page
-            BooksPage booksPage = new BooksPage(driver);
+            BooksPage booksPage = new BooksPage(getDriver());
 
             validatePageMessageSoft(booksPage.getConfirmationMessage(),
                     "Book Store", "BooksPage", softAssert);
             booksPage.clickLoginLink();
 
             // Login Page
-            LoginPage loginPage = new LoginPage(driver);
+            LoginPage loginPage = new LoginPage(getDriver());
 
             validatePageMessageSoft(loginPage.getConfirmationMessage(),
                     "Login in Book Store", "LoginPage", softAssert);
             loginPage.clickNewUserButton();
 
             // Register Page
-            RegisterPage registerPage = new RegisterPage(driver);
+            RegisterPage registerPage = new RegisterPage(getDriver());
             registerPage.enterFirstName(fname);
             registerPage.enterLastName(lname);
             registerPage.enterUserName(uname);
             registerPage.enterPassword(password);
             registerPage.clickRegisterButton();
 
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(5));
             Alert alert = wait.until(ExpectedConditions.alertIsPresent());
             String alertText = alert.getText();
 
@@ -103,7 +103,7 @@ public class TC_002AccountRegistrationTestDDTxlsx extends BaseClass {
             softAssert.fail("Exception occurred: " + e.getMessage());
         } finally {
             excel.closeWorkbook();
-            driver.navigate().to(ConfigReader.getProperty("baseURL"));
+            getDriver().navigate().to(ConfigReader.getProperty("baseURL"));
         }
 
         // Trigger all SoftAssert validations

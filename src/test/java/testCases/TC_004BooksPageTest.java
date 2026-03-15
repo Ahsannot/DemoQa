@@ -18,7 +18,7 @@ public class TC_004BooksPageTest extends BaseClass {
 
         // ----------------- HOME PAGE -----------------
         // Initialize HomePage object
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
 
         // Verify the HomePage confirmation message using hard assertion
         validatePageMessageHard(
@@ -32,7 +32,7 @@ public class TC_004BooksPageTest extends BaseClass {
 
         // ----------------- BOOKS PAGE -----------------
         // Initialize BooksPage object
-        BooksPage booksPage = new BooksPage(driver);
+        BooksPage booksPage = new BooksPage(getDriver());
 
         // Verify the BooksPage confirmation message using hard assertion
         validatePageMessageHard(

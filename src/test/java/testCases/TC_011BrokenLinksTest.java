@@ -19,7 +19,7 @@ public class TC_011BrokenLinksTest extends BaseClass {
         logger.info("===== Starting Broken Links Test (HTTP + Visual) =====");
             js = (JavascriptExecutor) driver;
         // -------- NAVIGATION --------
-        HomePage home = new HomePage(driver);
+        HomePage home = new HomePage(getDriver());
         try {
             home.clickElementsLink(); // Use JS click inside HomePage if implemented
             logger.info("Clicked on Elements link");
@@ -27,7 +27,7 @@ public class TC_011BrokenLinksTest extends BaseClass {
             logger.error("Failed to click Elements link: " + e.getMessage());
         }
 
-        ElementsMenuComponent menu = new ElementsMenuComponent(driver);
+        ElementsMenuComponent menu = new ElementsMenuComponent(getDriver());
         try {
             menu.openBrokenLinksImages();
             logger.info("Opened Broken Links page");
@@ -35,7 +35,7 @@ public class TC_011BrokenLinksTest extends BaseClass {
             logger.error("Failed to open Broken Links page: " + e.getMessage());
         }
 
-        BrokenLinksPage brokenLinksPage = new BrokenLinksPage(driver);
+        BrokenLinksPage brokenLinksPage = new BrokenLinksPage(getDriver());
 
         // -------- CHECK INDIVIDUAL LINKS --------
         int validLinkStatus = brokenLinksPage.getLinkStatusCode(
