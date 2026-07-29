@@ -151,15 +151,6 @@ public class ExtentReportListener implements ITestListener {
         }
     }
 
-   /*
-   🔁 Execution flow placement
-    onStart()      → Initialize report
-    onTestStart() → Create test entry
-    onTestSuccess / onTestFailure → Log results
-    onFinish()    → Write & close report
-    */
-
-
     // Accepts the current test’s ITestResult, Returns: WebDriver
     public WebDriver getDriverFromResult(ITestResult result) {
 
